@@ -1,0 +1,100 @@
+.list-main .list-main__item {
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.list-main__item {
+    position: relative;
+    margin: 2% 0%;
+}
+
+.card-default {
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: #212529;
+    -webkit-box-shadow: 0px 6px 30px 0px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 30px 0px rgb(0 0 0 / 10%);
+}
+
+.card-default__image {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 130px;
+}
+
+.card-default__image_event {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 130px;
+    border-radius: 8px;
+}
+
+.card-default__content {
+    position: relative;
+    padding: 25px;
+}
+
+.card-default__content_event {
+    position: relative;
+    padding: 15px;
+}
+
+.card-default__avatar-bg {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 6px 15px 0px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 15px 0px rgb(0 0 0 / 10%);
+}
+
+.card-product__label {
+    background-color: #3742FA;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 3px 15px;
+    border-radius: 100px;
+}
+
+.card-default__title {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.card-default__name {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #868E96;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.card-default__name_event {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #e74c3c;
+    display: block;
+    margin-bottom: 0px;
+}
+

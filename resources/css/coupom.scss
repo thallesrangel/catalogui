@@ -1,0 +1,140 @@
+.list-group-flush li:first-child { border-top: none; border-bottom: none; }
+.list-group-item { border: none; margin: 5px 0px; font-size: 18px; background: none;}
+
+.div-coupom
+{
+    margin: 4% 0%;
+}
+
+.card-coupom
+{
+    margin: 2% 0%;
+}
+
+.card-coupom h4
+{
+    color: #3742FA;
+}
+
+.card-coupom h5
+{
+    color: #3742FA;
+}
+
+.card-coupom .card-title
+{
+    color: #3742FA;
+}
+
+.card-coupom .card-link
+{
+    color: #FF4757;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.img-announcement
+{
+    background-image: repeating-linear-gradient(90deg,#2ecc71 50px,#f7fdca 0,#f1c40f 0,#e74c3c,#db9dbe,#c49cdf,#3498db,#61c2e4);
+    border-radius: 100%;
+    margin: 1rem;
+    height: 180px;
+    width: 180px;
+    padding: 3px;
+}
+
+.banner-announcement img
+{
+    max-width: 70%;
+    max-height: 400px;
+}
+
+.card-announcement
+{
+    width: 293px;
+    height: 293px;
+    border: none;
+    margin: 25px 0px;
+}
+
+
+.details-announcement h6
+{
+    color: #7f8c8d;
+}
+
+.details-announcement p
+{
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-announcement
+    {
+        width: 158px;
+        height: 158px;
+        border: none;
+        margin: 2px 0px;
+        padding: 3px;
+    }
+}
+
+.list-infos li:hover
+{
+    color: #FF4757;
+}
+
+.list-infos li a:hover
+{
+    color: #FF4757;
+}
+
+
+
+/* RATE */
+.parent>.row{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.col label{
+    overflow: hidden;
+    position: relative;
+}
+
+.imgbgchk:checked + label>.tick_container{
+    opacity: 1;
+}
+
+.imgbgchk:checked + label>img
+{
+    transform: scale(1.25);
+    opacity: 0.3;
+}
+
+.tick_container
+{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+    text-align: center;
+}
+
+.tick
+{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+

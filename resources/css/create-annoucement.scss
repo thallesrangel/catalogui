@@ -1,0 +1,48 @@
+.form-announcement
+{
+    border: 1px solid #ecf0f1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.form-announcement > .row
+{
+    margin: 2% 0%;
+}
+
+.form-announcement h4
+{
+    padding: 10px;
+}
+
+.img-announcement-upload
+{
+    max-height: 300px;
+    max-width: 300px;
+    border: 2px dashed #c2cdda;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+
+
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}

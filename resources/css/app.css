@@ -1,0 +1,15 @@
+@import 'default.scss';
+@import 'btn.scss';
+@import 'card-menu.scss';
+@import 'banner.scss';
+@import 'card-annoucement.scss';
+@import 'banner-initial.scss';
+@import 'space.scss';
+@import 'search-main.scss';
+@import 'navbar.scss';
+@import 'coupom.scss';
+@import 'txt-colors.scss';
+@import 'create-annoucement.scss';
+@import 'dashboard.scss';
+@import 'contact.scss';
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";

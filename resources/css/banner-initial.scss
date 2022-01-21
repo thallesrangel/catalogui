@@ -1,0 +1,29 @@
+.banner-initial
+{
+    margin: 3rem 0rem;
+}
+
+.banner-initial > h1
+{ 
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0;
+    font-size: 42px;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+.banner-initial p
+{
+    color: #1b1c1e;
+    font-size: 20px;
+    line-height: 135%;
+}
+
+.banner-initial a
+{
+    text-decoration: none;
+    margin: 10px 0px;
+}
