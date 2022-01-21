@@ -50,7 +50,7 @@
                         <div class="card card-coupom">
                             <div class="card-body">
                                 <h4 class="card-title">{{ $item->name }}</h4>
-                                <h5 class="card-subtitle mb-2">{{ $item->code }}</h5>
+                                <h5 class="card-subtitle mb-2 txt-green">{{ $item->code }}</h5>
                                 <p class="card-text">{{ $item->description }}</p>
                                 @if(isset($item->link))
                                     <a target="_blank" href="{{ $item->link }}" class="card-link">Ver Cupom <i class="bi bi-caret-right"></i></a>
@@ -103,56 +103,56 @@
                     <div class="row">
                         <div class='col text-center'>
                             <input type="radio" name="imgbackground" id="img1" class="d-none imgbgchk" value="">
-                        <label for="img1">
-                            😞
-                            <h6>Horrível</h6>
-                            <div class="tick_container">
-                            <div class="tick"><i class="bi bi-check"></i></div>
-                            </div>
+                            <label for="img1">
+                                <span>😞</span>
+                                <h6>Horrível</h6>
+                                <div class="tick_container">
+                                    <div class="tick"><i class="bi bi-check"></i></div>
+                                </div>
                             </label>
                         </div>
 
                         <div class='col text-center'>
                             <input type="radio" name="imgbackground" id="img2" class="d-none imgbgchk" value="">
-                        <label for="img2">
-                            😔
-                            <h6>Ruim</h6>
-                            <div class="tick_container">
-                            <div class="tick"><i class="bi bi-check"></i></div>
-                            </div>
+                            <label for="img2">
+                                <span>😔</span>
+                                <h6>Ruim</h6>
+                                <div class="tick_container">
+                                    <div class="tick"><i class="bi bi-check"></i></div>
+                                </div>
                             </label>
                         </div>
 
                         <div class='col text-center'>
                             <input type="radio" name="imgbackground" id="img3" class="d-none imgbgchk" value="">
-                        <label for="img3"> 
-                            🙂
-                            <h6>Razoável</h6>
-                            <div class="tick_container">
-                            <div class="tick"><i class="bi bi-check"></i></div>
-                            </div>
+                                <label for="img3"> 
+                                <span>🙂</span>
+                                <h6>Razoável</h6>
+                                <div class="tick_container">
+                                    <div class="tick"><i class="bi bi-check"></i></div>
+                                </div>
                             </label>
                         </div>
 
                         <div class='col text-center'>
                             <input type="radio" name="imgbackground" id="img4" class="d-none imgbgchk" value="">
-                        <label for="img4"> 
-                            😁
-                            <h6>Bom</h6>
-                            <div class="tick_container">
-                            <div class="tick"><i class="bi bi-check"></i></div>
-                            </div>
+                            <label for="img4"> 
+                                <span>😁</span>
+                                <h6>Bom</h6>
+                                <div class="tick_container">
+                                    <div class="tick"><i class="bi bi-check"></i></div>
+                                </div>
                             </label>
                         </div>
 
                         <div class='col text-center'>
                             <input type="radio" name="imgbackground" id="img5" class="d-none imgbgchk" value="">
-                        <label for="img5"> 
-                            🤩
-                            <h6>Excelente</h6>
-                            <div class="tick_container">
-                            <div class="tick"><i class="bi bi-check"></i></div>
-                            </div>
+                            <label for="img5"> 
+                                <span>🤩</span>
+                                <h6>Excelente</h6>
+                                <div class="tick_container">
+                                    <div class="tick"><i class="bi bi-check"></i></div>
+                                </div>
                             </label>
                         </div>
                     

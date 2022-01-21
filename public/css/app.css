@@ -13211,11 +13211,6 @@ a
     color: #3742FA;
 }
 
-.card-coupom h5
-{
-    color: #3742FA;
-}
-
 .card-coupom .card-title
 {
     color: #3742FA;
@@ -13305,6 +13300,10 @@ a
 .col label{
     overflow: hidden;
     position: relative;
+}
+
+.col label span{
+    font-size: 20px;
 }
 
 .imgbgchk:checked + label>.tick_container{

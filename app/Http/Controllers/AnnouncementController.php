@@ -29,6 +29,11 @@ class AnnouncementController extends Controller
     public function show($slug)
     {
         $announcement = $this->announcementService->show($slug);
+        
+        if (empty($announcement->id)) {
+            return redirect(abort(404));
+        }
+
         $posts = $this->announcementManagementPostService->getPost($announcement->id);
         $coupons = $this->announcementManagementCouponService->getCoupon($announcement->id);
         
