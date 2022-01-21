@@ -3,8 +3,9 @@
 @section('content')
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-sm-12 col-md-3 text-center">
-          <img src="{{ asset('img/logo.png') }}" class="img-fluid space-3">
-          <span class="txt-green">Beta</span>
+          <a href="{{ route('home') }}"><img src="{{ asset('img/logo.png') }}" class="img-fluid space-3">
+            <span class="txt-green">Beta</span>
+          </a>
 
           <form method="POST" class="div-login" action="{{ route('login.authenticate') }}">
             @csrf 
