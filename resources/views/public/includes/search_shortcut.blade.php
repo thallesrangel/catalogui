@@ -39,7 +39,7 @@
     <div class="col-sm-6 col-md-3 cards-menu">
         <div class="card bg-pink">
             <div class="card-body">
-                <i class="bi bi-briefcase"></i>
+                <i class="bi bi-building"></i>
                 <h5 class="card-title">Imóveis</h5>
             </div>
           </div>
