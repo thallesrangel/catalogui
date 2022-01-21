@@ -28,11 +28,9 @@ class AnnouncementManagementCouponService
     public function disable($id)
     {
         try{
-            $this->announcementManagementCouponRepository->disable($id);
+            return $this->announcementManagementCouponRepository->disable($id);
         } catch(\Exception $e) {
             throw new InvalidArgumentException('Não foi possível deletar o registro');
         }
-        
-        return redirect()->route('dashboard')->with("success", "Registro excluído com sucesso");
     }
 }

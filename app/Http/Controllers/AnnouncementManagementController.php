@@ -44,13 +44,15 @@ class AnnouncementManagementController extends Controller
 
     public function disablePost($id)
     {
-        $this->announcementManagementPostService->disable($id);
-        //return redirect()->route('dashboard');
+        $response = $this->announcementManagementPostService->disable($id);
+
+        return redirect()->route('management', $response->announcement_id );
     }
 
     public function disableCoupon($id)
     {
-        $this->announcementManagementCouponService->disable($id);
-        //return redirect()->route('dashboard');
+        $response = $this->announcementManagementCouponService->disable($id);
+        
+        return redirect()->route('management', $response->announcement_id );
     }
 }

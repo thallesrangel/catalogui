@@ -42,11 +42,9 @@ class AnnouncementService
     public function disable($id)
     {
         try{
-            $this->announcementRepository->disable($id);
+            return $this->announcementRepository->disable($id);
         } catch(\Exception $e) {
             throw new InvalidArgumentException('Não foi possível deletar o registro');
         }
-        
-        return redirect()->route('dashboard')->with("success", "Registro excluído com sucesso");
     }
 }
