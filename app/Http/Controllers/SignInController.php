@@ -29,7 +29,7 @@ class SignInController extends Controller
             
             return redirect()->route('dashboard')->with('success', 'Bem-vindo!');
         } else {
-            return redirect()->route('login');
+            return redirect()->route('login')->withErrors(['fail' => 'A senha está incorreta.']);;
         }
     }
 }
