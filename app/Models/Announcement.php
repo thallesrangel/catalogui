@@ -20,6 +20,8 @@ class Announcement extends Model
         'img_profile',
         'img_card',
         'information',
+        'title_main_link',
+        'main_link',
         'email',
         'whatsapp',
         'tel',

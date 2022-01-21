@@ -25,6 +25,8 @@ class CreateAnnouncement extends Migration
             $table->string('img_profile');
             $table->string('img_card');
             $table->string('information')->nullable();
+            $table->string('title_main_link')->nullable();
+            $table->string('main_link')->nullable();
             $table->string('email');
             $table->string('tel');
             $table->string('whatsapp')->nullable();

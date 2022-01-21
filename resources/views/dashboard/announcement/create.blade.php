@@ -84,6 +84,20 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-3">
+                <label for="title_main_link" class="form-label">Título do Principal *</label>
+                <input type="text" class="form-control" id="title_main_link" name="title_main_link" placeholder="Ex: Acessar Catálogo">
+                <p class="txt-red">{{ $errors->first('title_main_link') }}</p>
+            </div>
+
+            <div class="col-md-4">
+                <label for="main_link" class="form-label">URL do Link Principal *</label>
+                <input type="text" class="form-control" id="main_link" name="main_link" placeholder="Ex: https://google.com.br">
+                <p class="txt-red">{{ $errors->first('main_link') }}</p>
+            </div>
+        </div>
+
         <h4>Contato</h4>
 
         <div class="row">

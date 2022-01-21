@@ -28,15 +28,17 @@
         @endforeach
     </div>
 
-    <div class="text-center">
-        <a class="btn btn-outline-danger" href="#" target="_blank">Acessar Catálogo</a>
-    </div>
+    @if(!isset($data->main_link))
+        <div class="text-center">
+            <a class="btn btn-outline-danger" href="#" target="_blank" name="main_link">Acessar</a>
+        </div>
+    @endif
 
     @if(isset($data->description))
-    <div class="row div-info space-3">
-        <h3>Informações</h3>
-        <p>{!! $data->description !!}</p>
-    </div>
+        <div class="row div-info space-3">
+            <h3>Informações</h3>
+            <p>{!! $data->description !!}</p>
+        </div>
     @endif
 
     @if (!$coupons->isEmpty())
@@ -68,12 +70,29 @@
             
             <h3>Contato</h3>
             <ul class="list-group list-infos">
-                <li class="list-group-item"><a target="_blank" href="https://api.whatsapp.com/send/?phone={{ $data->whatsapp }}"><i class="bi bi-whatsapp"></i> {{ $data->whatsapp }}</a></li>
-                <li class="list-group-item"><a target="_blank" href="tel:{{ $data->tel }}"><i class="bi bi-telephone"></i> {{ $data->tel }}</a></li>
-                <li class="list-group-item"><a target="_blank" href="{{ $data->site }}"><i class="bi bi-box-arrow-up-right"></i> {{ $data->site }}</a></li>
-                <li class="list-group-item"><a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i> {{ $data->facebook }}</a></li>
-                <li class="list-group-item"><a target="_blank" href="https://www.instagram.com/{{ $data->instagram }}"><i class="bi bi-instagram"></i> {{ $data->instagram }}</a></li>
-                <li class="list-group-item"><a href="mailto:{{ $data->email }}"><i class="bi bi-envelope"></i> {{ $data->email }}</a></li>
+                @if($data->whatsapp)
+                    <li class="list-group-item"><a target="_blank" href="https://wa.me/55{{ $data->whatsapp }}"><i class="bi bi-whatsapp"></i> {{ $data->whatsapp }}</a></li>
+                @endif
+
+                @if($data->tel)
+                    <li class="list-group-item"><a target="_blank" href="tel:{{ $data->tel }}"><i class="bi bi-telephone"></i> {{ $data->tel }}</a></li>
+                @endif
+
+                @if($data->site)
+                    <li class="list-group-item"><a target="_blank" href="{{ $data->site }}"><i class="bi bi-box-arrow-up-right"></i> {{ $data->site }}</a></li>
+                @endif
+
+                @if($data->facebook)
+                    <li class="list-group-item"><a target="_blank" href="https://www.facebook.com/"><i class="bi bi-facebook"></i> {{ $data->facebook }}</a></li>
+                @endif
+
+                @if($data->instagram)
+                    <li class="list-group-item"><a target="_blank" href="https://www.instagram.com/{{ $data->instagram }}"><i class="bi bi-instagram"></i> {{ $data->instagram }}</a></li>
+                @endif
+
+                @if($data->email)
+                    <li class="list-group-item"><a href="mailto:{{ $data->email }}"><i class="bi bi-envelope"></i> {{ $data->email }}</a></li>
+                @endif
             </ul>
 
             <h3>Recomendações</h3>
