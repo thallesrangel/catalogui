@@ -43,7 +43,7 @@
         @endif
 
         @if (!$coupons->isEmpty())
-            <div class="row div-coupom">
+            <div class="row">
                 <h3>Descontos</h3>
                 @foreach($coupons as $item)
                     <div class="col-sm-12 col-md-3">

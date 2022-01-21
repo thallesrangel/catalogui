@@ -4,7 +4,7 @@
     @include('dashboard.includes.navbar')
 
     <div class="container">
-        <h3 class="space-3">Anunciar</h3>   
+        <h4 class="space-3">Anunciar Negócios, Estabelecimentos e Serviços</h4>   
 
         <form method="post" action="{{ route('announcement.store') }}" enctype="multipart/form-data" class="form-announcement">
             @csrf

@@ -4,7 +4,7 @@
     @include('dashboard.includes.navbar')
 
     <div class="container">
-        <h3 class="space-3">Meus Anúncio</h3>
+        <h4 class="space-3">Meus Anúncio</h4>
         <ul class="list-inline list-menu-my-announcement">
             <li class="list-inline-item"><a href="{{ route('dashboard') }}">Publicados</a></li>
             <li class="list-inline-item"><a href="?status=aguardando">Aguardando Publicação</a></li>
@@ -21,7 +21,6 @@
                     <div class="row itens-my-announcement">
                         <div class="col-md-2 d-flex justify-content-center">
                             <img class="img-fluid" src="{{ asset('img/thumbnails') .'/'. $item->img_profile }}">
-                        
                         </div>
                 
                         <div class="col-md-6">
