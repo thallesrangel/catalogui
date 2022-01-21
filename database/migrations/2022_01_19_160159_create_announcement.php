@@ -24,6 +24,7 @@ class CreateAnnouncement extends Migration
             $table->bigInteger('subcategory_id')->unsigned();
             $table->string('img_profile');
             $table->string('img_card');
+            $table->string('information')->nullable();
             $table->string('email');
             $table->string('tel');
             $table->string('whatsapp')->nullable();

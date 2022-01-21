@@ -10,7 +10,8 @@
     <title>Catalogui</title>
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
-        tinymce.init({selector:'#description', menubar:false, plugins: 'emoticons', toolbar: 'emoticons', statusbar: false,});
+        tinymce.init({selector:'#description', menubar: false, plugins: 'emoticons', toolbar: 'emoticons', statusbar: false });
+        tinymce.init({selector:'#information', menubar: false, plugins: 'emoticons', toolbar: 'emoticons', statusbar: false });
     </script>
 </head>
 <body>

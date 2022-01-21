@@ -5,7 +5,7 @@
     </a>
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="#">{{ session('user.name')}}</a>
+            <a class="nav-link" href="#">{{ucfirst(session('user.name'))}}</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{{ route('logout') }}">Sair</a>

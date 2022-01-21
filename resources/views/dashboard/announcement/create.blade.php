@@ -74,6 +74,16 @@
             </div>
         </div>
 
+        <h4>Mais Informações</h4>
+
+        <div class="row">
+            <div class="col-md-8">
+                <label for="information" class="form-label">Informações *</label>
+                <textarea id="information" name="information"></textarea>
+                <p class="txt-red">{{ $errors->first('information') }}</p>
+            </div>
+        </div>
+
         <h4>Contato</h4>
 
         <div class="row">

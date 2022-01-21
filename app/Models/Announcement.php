@@ -19,6 +19,7 @@ class Announcement extends Model
         'subcategory_id',
         'img_profile',
         'img_card',
+        'information',
         'email',
         'whatsapp',
         'tel',

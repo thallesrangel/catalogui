@@ -78,6 +78,7 @@ class AnnouncementRepositoryEloquent implements AnnouncementRepositoryInterface
 
         $announcement->img_card = $input['img_card'];
 
+        $announcement->information = $request->information;
         $announcement->email = $request->email;
         $announcement->whatsapp = $request->whatsapp;
         $announcement->tel = $request->tel;

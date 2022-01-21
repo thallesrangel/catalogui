@@ -32,33 +32,32 @@
         <a class="btn btn-outline-danger" href="#" target="_blank">Acessar Catálogo</a>
     </div>
 
+    @if(isset($data->description))
     <div class="row div-info space-3">
         <h3>Informações</h3>
-        <p>Baixe nosso APP 📱</p>
-        <p>✅ Android: https://blabla.com.br</p>
-        <p>✅ IOS: https://blabla.com.br</p>
-
-        <p>🚨 AVISO COVID-19 🚨</p>
+        <p>{!! $data->description !!}</p>
     </div>
+    @endif
 
-    <div class="row div-coupom">
-        <h3>Descontos</h3>
-
-        @foreach($coupons as $item)
-            <div class="col-sm-12 col-md-3">
-                <div class="card card-coupom">
-                    <div class="card-body">
-                        <h4 class="card-title">{{ $item->name }}</h4>
-                        <h5 class="card-subtitle mb-2">{{ $item->code }}</h5>
-                        <p class="card-text">{{ $item->description }}</p>
-                        @if(isset($item->link))
-                            <a target="_blank" href="{{ $item->link }}" class="card-link">Ver Cupom <i class="bi bi-caret-right"></i></a>
-                        @endif
+    @if (!$coupons->isEmpty())
+        <div class="row div-coupom">
+            <h3>Descontos</h3>
+            @foreach($coupons as $item)
+                <div class="col-sm-12 col-md-3">
+                    <div class="card card-coupom">
+                        <div class="card-body">
+                            <h4 class="card-title">{{ $item->name }}</h4>
+                            <h5 class="card-subtitle mb-2">{{ $item->code }}</h5>
+                            <p class="card-text">{{ $item->description }}</p>
+                            @if(isset($item->link))
+                                <a target="_blank" href="{{ $item->link }}" class="card-link">Ver Cupom <i class="bi bi-caret-right"></i></a>
+                            @endif
+                        </div>
                     </div>
                 </div>
-            </div>
-        @endforeach
-    </div>
+            @endforeach
+        </div>
+    @endif
 
     <div class="row space-3">
         <div class="col-md-6">
