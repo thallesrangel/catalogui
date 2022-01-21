@@ -14,8 +14,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // php artisan migrate:refresh --seed
-        $this->call(States::class);
-        $this->call(City::class);
         $this->call(Category::class);
         $this->call(Subcategory::class);
     }

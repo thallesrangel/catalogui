@@ -20,16 +20,11 @@ class CreateUser extends Migration
             $table->string('email')->unique();
             $table->string('document')->unique();
             $table->string('password');
-            $table->bigInteger('state_id')->unsigned()->nullable();
-            $table->bigInteger('city_id')->unsigned()->nullable();
+            $table->string('state_id')->nullable();
+            $table->string('city_id')->nullable();
             $table->string('role');    
             $table->string('flag_status')->default('enabled');
             $table->timestamps();
-        });
-
-        Schema::table('user', function($table) {
-            $table->foreign('state_id')->references('id')->on('states');
-            $table->foreign('city_id')->references('id')->on('city');
         });
     }
 

@@ -2,19 +2,20 @@
     <h3 class="text-center">Onde você está?</h3>
     <div class="d-flex justify-content-center">
         <div class="col-md-2 col-sm-12 p-2 ">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Espírito Santo</option>
-                <option value="1">São Paulo</option>
-                <option value="2">Bahia</option>
-                <option value="3">Rio de Janeiro</option>
+            <select class="form-control" id="input-states" name="state_id">
+                <option value="">Selecione um Estado</option>
+                @foreach($states as $item)
+                    <option value="{{ $item['sigla'] }}">{{ $item['nome'] }}</option>
+                @endforeach
             </select>
+            <p class="txt-red">{{ $errors->first('state_id') }}</p>
         </div>
 
         <div class="col-md-2 col-sm-12 p-2">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Fundão</option>
-                <option value="1">Vitória</option>
+            <select id="city" class="form-control" id="input-city" name="city_id" required>
+                <option value="">Selecione uma Cidade</option>
             </select>
+            <p class="txt-red">{{ $errors->first('city_id') }}</p>
         </div>
     </div>
    

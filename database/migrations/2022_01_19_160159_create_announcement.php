@@ -30,8 +30,8 @@ class CreateAnnouncement extends Migration
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();
             $table->string('site')->nullable();
-            $table->bigInteger('state_id')->unsigned();
-            $table->bigInteger('city_id')->unsigned();
+            $table->string('state_id');
+            $table->string('city_id');
             $table->string('cep');
             $table->string('district');
             $table->string('street');
@@ -43,8 +43,6 @@ class CreateAnnouncement extends Migration
 
         Schema::table('announcement', function($table) {
             $table->foreign('user_id')->references('id')->on('user');
-            $table->foreign('state_id')->references('id')->on('states');
-            $table->foreign('city_id')->references('id')->on('city');
             $table->foreign('category_id')->references('id')->on('category_announcement');
             $table->foreign('subcategory_id')->references('id')->on('subcategory_announcement');
         });

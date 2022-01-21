@@ -2,20 +2,19 @@
 
 namespace App\Repositories;
 
-use App\Models\State;
-
 class StateRepository
 {
-    protected $states;
-
-    public function __construct(State $states)
-    {
-        $this->states = $states;
-    }
-
     public function get()
     {
-  
-        return $this->states->get();
+        $client = new \GuzzleHttp\Client();
+        $res = $client->get('https://servicodados.ibge.gov.br/api/v1/localidades/estados/');
+
+        $estados = [];
+        foreach (json_decode($res->getBody()->getContents()) as $key => $value) {
+            $estados[$key]['sigla'] = $value->sigla;
+            $estados[$key]['nome'] = $value->nome;
+        }
+
+        return $estados;
     }
 }

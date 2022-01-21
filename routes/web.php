@@ -12,12 +12,15 @@ use App\Http\Controllers\SignOutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AnnouncementManagementController;
+use App\Http\Controllers\CityController;
 
 Route::get('/', [ HomeController::class, 'index' ])->name('home');
 
 Route::prefix('anuncio')->group(function () {
     Route::get('/{slug}', [ AnnouncementController::class, 'show' ])->name('announcemen.datails');
 });
+
+Route::get('/estado/{sigla}/cidades', [ CityController::class, 'getById']);
 
 Route::get('/search', [ SearchController::class, 'index' ])->name('search');
 
