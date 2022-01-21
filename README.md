@@ -8,7 +8,9 @@ Requisitos
 [x] Login seguro com validações
 [x] Criar anúncio com validações
 [x] Listar anúncio na dashboard
-[] Adicionar links - anúncio detalhes
+[x] Adicionar links - anúncio detalhes
+[x] Adicionar tinyMCE(criar anúncio)
 
 [] Buscar anúncio
-[] Adicionar Summernote(criar anúncio)
+
+[x] Adicionar tinyMCE(criar avaliação)

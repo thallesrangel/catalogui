@@ -4,7 +4,7 @@
     @include('public.includes.navbar')
 
     <div class="row d-flex justify-content-center">
-        <div class="col-sm-12 col-md-2">
+        <div class="col-sm-12 col-md-3">
             <img class="img-fluid img-announcement" src="{{ asset('img/thumbnails') .'/'. $data->img_profile }}">
         </div>
 
@@ -13,7 +13,7 @@
             <h6>{{ $data->category->name }}</h6>
             <a href="#" class="btn btn-sm btn-light disabled"><i class="bi bi-share"></i> Compartilhar</a>
             <a href="#" class="btn btn-sm btn-light disabled"><i class="bi bi-bookmark-check"></i> Reivindicar</a>
-            <a href="#" class="btn btn-sm btn-outline-danger"><i class="bi bi-flag"></i> Denunciar</a>
+            <a href="#" class="btn btn-sm btn-outline-danger disabled"><i class="bi bi-flag"></i> Denunciar</a>
             <p> {!! $data->description !!}</p>
         </div>
     </div>
