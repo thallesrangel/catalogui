@@ -22,7 +22,7 @@ Route::prefix('anuncio')->group(function () {
 
 Route::get('/estado/{sigla}/cidades', [ CityController::class, 'getById']);
 
-Route::get('/search', [ SearchController::class, 'index' ])->name('search');
+Route::get('/buscar', [ SearchController::class, 'index' ])->name('search');
 
 Route::prefix('sign')->group(function () {
     Route::get('/up', [ SignUpController::class, 'index' ])->name('user.create');
