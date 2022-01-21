@@ -8,11 +8,29 @@
         <ul class="list-inline list-menu-my-announcement">
             <li class="list-inline-item"><a href="{{ route('dashboard') }}">Publicados</a></li>
             <li class="list-inline-item"><a href="?status=aguardando">Aguardando Publicação</a></li>
-            <li class="list-inline-item"><a href="?status=inativos">Inativos</a></li>
-            <li class="list-inline-item"><a href="?status=expirados">Expirados</a></li>
+            <li class="list-inline-item"><a href="?status=inativado">Inativados</a></li>
+            <!--<li class="list-inline-item"><a href="?status=expirado">Expirados</a></li>-->
         </ul>
 
         @switch( request()->get('status') )
+            @case('inativado')
+                <span class="alert-outline-danger">Os anúncios foram desativados.</span>
+                <p class="txt-red space-3"><i class="bi bi-x"></i> Inativados</p>
+
+                @foreach($data as $item)
+                    <div class="row itens-my-announcement">
+                        <div class="col-md-2 d-flex justify-content-center">
+                            <img class="img-fluid" src="{{ asset('img/thumbnails') .'/'. $item->img_profile }}">
+                        </div>
+                
+                        <div class="col-md-6">
+                            <h4>{{ $item->title }}</h4>
+                            <h6 class="txt-green">{{ $item->category->name }} <i class="bi bi-caret-right"></i> {{ $item->subcategory->name }}</h6>
+                            <p><i class="bi bi-calendar-week"></i> {{ Carbon\Carbon::parse($item->created_at)->format('d/m/Y') }} ás {{ Carbon\Carbon::parse($item->created_at)->format('H:s') }}</p>
+                        </div>
+                    </div>
+                @endforeach
+                @break
             @case('aguardando')
                 <span class="alert-orange">Os anúncios abaixo serão processados. Acompanhe o status do seu anúncio.</span>
                 <p class="txt-orange space-3"><i class="bi bi-alarm"></i> AGUARDANDO PUBLICAÇÃO</p>

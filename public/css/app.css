@@ -13439,6 +13439,16 @@ a
     padding: 5px 15px;
 }
 
+.alert-outline-danger
+{
+    color: #ee2737;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid #ee2737;
+    width: auto;
+    padding: 5px 15px;
+}
+
 .div-contact
 {
     background: rgba(55, 66, 250, 0.1);
