@@ -52,7 +52,7 @@
                                 <img class="card-default__avatar lazy" alt="" width="40px" src="{{ asset('img/thumbnails') .'/'. $item->img_profile }}" style="">
                             </div>
                             <h4 class="card-default__title">{{ $item->title }}</h4>
-                            <span class="card-default__name">{{ $item->city->name}} - {{ $item->state->abbreviation}}</span>
+                            <span class="card-default__name">{{ $item->state_id}} - {{ $item->city_id }}</span>
                             <div class="card-product__footer">
                                 <span class="card-product__label">1 Benefício</span>
                             </div>								

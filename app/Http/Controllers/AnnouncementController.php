@@ -5,6 +5,7 @@ use App\Http\Requests\AnnouncementRequest;
 use App\Services\AnnouncementService;
 use App\Services\AnnouncementManagementPostService;
 use App\Services\AnnouncementManagementCouponService;
+use App\Services\StateService;
 
 class AnnouncementController extends Controller
 {
@@ -15,12 +16,14 @@ class AnnouncementController extends Controller
     public function __construct(
         AnnouncementService $announcementService,
         AnnouncementManagementPostService $announcementManagementPostService,
-        AnnouncementManagementCouponService $announcementManagementCouponService
+        AnnouncementManagementCouponService $announcementManagementCouponService,
+        StateService $stateService
         )
     {
         $this->announcementService = $announcementService;
         $this->announcementManagementPostService = $announcementManagementPostService;
         $this->announcementManagementCouponService = $announcementManagementCouponService;
+        $this->stateService = $stateService;
     }
 
     public function show($slug)
@@ -38,7 +41,9 @@ class AnnouncementController extends Controller
 
     public function create()
     {
-        return view('dashboard.announcement.create');
+        $states = $this->stateService->get();
+        
+        return view('dashboard.announcement.create', [ 'states' => $states ]);
     }
 
     public function store(AnnouncementRequest $request)

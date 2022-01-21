@@ -19,8 +19,6 @@ class SearchAnnouncementRepositoryEloquent implements SearchAnnouncementReposito
     {
         return $this->announcement->where( 'flag_status', 'published' )
                             ->orderBy('id', 'DESC')
-                            ->with('state')
-                            ->with('city')
                             ->with('category')
                             ->with('subcategory')
                             ->get();

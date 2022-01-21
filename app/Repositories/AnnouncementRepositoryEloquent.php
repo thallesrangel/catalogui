@@ -106,7 +106,6 @@ class AnnouncementRepositoryEloquent implements AnnouncementRepositoryInterface
                                 ->orderBy('id', 'DESC')
                                 ->with('category')
                                 ->with('subcategory')
-                                ->with('state')
                                 ->first();
     }
 }

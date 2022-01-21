@@ -120,19 +120,20 @@
 
         <div class="row">
             <div class="col-md-3">
-                <label for="state_id" class="form-label">Estado *</label>
-                <select class="form-select" id="state_id" name="state_id">
-                    <option value="">Escolha uma opção</option>
-                    <option value="1">Espírito Santo</option>
+                <label for="input-states" class="form-label">Estado *</label>
+                <select class="form-control" id="input-states" name="state_id">
+                    <option value="">Selecione um Estado</option>
+                        @foreach($states as $item)
+                            <option value="{{ $item['sigla'] }}">{{ $item['nome'] }}</option>
+                        @endforeach
                 </select>
-                <p class="txt-red">{{ $errors->first('category') }}</p>
+                <p class="txt-red">{{ $errors->first('state_id') }}</p>
             </div>
 
             <div class="col-md-3">
                 <label for="city_id" class="form-label">Cidade *</label>
-                <select class="form-select" id="city_id" name="city_id">
-                    <option value="">Escolha uma opção</option>
-                    <option value="1">Fundão</option>
+                <select id="city" class="form-control" id="input-city" name="city_id" required>
+                    <option value="">Selecione uma Cidade</option>
                 </select>
                 <p class="txt-red">{{ $errors->first('city_id') }}</p>
             </div>

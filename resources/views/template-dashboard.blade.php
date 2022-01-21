@@ -13,6 +13,7 @@
     <div class="container">
         @include('alert')
         @yield('content')
+        <script src="{{ asset('/js/selectCity.js') }}"></script>
     </div>
 </body>
 </html>
