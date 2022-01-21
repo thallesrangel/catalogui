@@ -15,7 +15,7 @@
     </script>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         @include('alert')
         @yield('content')
         <script src="{{ asset('/js/selectCity.js') }}"></script>
