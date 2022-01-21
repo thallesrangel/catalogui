@@ -1,3 +1,5 @@
+@import "bootstrap";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import 'default.scss';
 @import 'btn.scss';
 @import 'card-menu.scss';
@@ -12,4 +14,3 @@
 @import 'create-annoucement.scss';
 @import 'dashboard.scss';
 @import 'contact.scss';
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";

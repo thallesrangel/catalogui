@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/app.css">
     <script src="/js/app.js"></script>
     <link rel='icon' href="{{ asset('img/icon.png') }}" type='image/x-icon' sizes="16x16" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>Catalogui</title>
 </head>
 <body>
