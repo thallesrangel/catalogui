@@ -12843,14 +12843,22 @@ url(/fonts/vendor/bootstrap-icons/bootstrap-icons.woff?38c4d2499557ae0379fd160e1
 
 body
 {
+  background-color: #fafafa;
   font-family: 'Roboto', sans-serif;
   height: 100vh;
+  padding: 0px;
+  margin: 0px;
 }
 
 a
 {
   text-decoration: none;
   color: #212529;
+}
+
+.card-announcement
+{
+  background-color: #fafafa;
 }
 .btn-primary
 {
@@ -13182,6 +13190,13 @@ a
     font-weight: 600;
 }
 
+.navbar
+{
+    padding: 10px 25px;
+    background-color: #FFF;
+    border-bottom:1px solid #dbdbdb;
+}
+
 .list-group-flush li:first-child { border-top: none; border-bottom: none; }
 .list-group-item { border: none; margin: 5px 0px; font-size: 18px; background: none;}
 
@@ -13221,9 +13236,12 @@ a
 {
     background-image: repeating-linear-gradient(90deg,#2ecc71 50px,#f7fdca 0,#f1c40f 0,#e74c3c,#db9dbe,#c49cdf,#3498db,#61c2e4);
     border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%; 
     margin: 1rem;
-    height: 170px;
-    width: 170px;
+    height: 160px;
+    width: 160px;
     padding: 3px;
 }
 

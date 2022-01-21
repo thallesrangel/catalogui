@@ -10,7 +10,7 @@
     <title>Catalogui</title>
 </head>
 <body>
-    <div class="container h-100">
+    <div class="container-fluid h-100">
         @include('alert')
         @yield('content')
     </div>

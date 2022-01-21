@@ -37,9 +37,12 @@
 {
     background-image: repeating-linear-gradient(90deg,#2ecc71 50px,#f7fdca 0,#f1c40f 0,#e74c3c,#db9dbe,#c49cdf,#3498db,#61c2e4);
     border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%; 
     margin: 1rem;
-    height: 180px;
-    width: 180px;
+    height: 160px;
+    width: 160px;
     padding: 3px;
 }
 

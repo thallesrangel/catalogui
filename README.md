@@ -12,5 +12,4 @@ Requisitos
 [x] Adicionar tinyMCE(criar anúncio)
 
 [] Buscar anúncio
-
-[x] Adicionar tinyMCE(criar avaliação)
+[] Adicionar tinyMCE(criar avaliação)
