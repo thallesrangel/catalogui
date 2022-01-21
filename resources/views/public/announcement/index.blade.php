@@ -37,14 +37,14 @@
 
         @if(isset($data->information))
             <div class="row div-info space-3">
-                <h3>Informações</h3>
+                <h4>Informações</h4>
                 <p>{!! $data->information !!}</p>
             </div>
         @endif
 
         @if (!$coupons->isEmpty())
             <div class="row">
-                <h3>Descontos</h3>
+                <h4>Descontos</h4>
                 @foreach($coupons as $item)
                     <div class="col-sm-12 col-md-3">
                         <div class="card card-coupom">
@@ -64,12 +64,12 @@
 
         <div class="row space-3">
             <div class="col-md-6">
-                <h3>Localização</h3>
+                <h4>Localização</h4>
                 <ul class="list-group list-infos">
                     <li class="list-group-item"><a href="#"><i class="bi bi-geo-alt"></i> {{ $data->cep }}, {{ $data->street }}, {{ $data->number }} - {{ $data->district }}, {{ $data->city_id }} - {{ $data->state_id }}</a></li>
                 </ul>
                 
-                <h3>Contato</h3>
+                <h4>Contato</h4>
                 <ul class="list-group list-infos">
                     @if($data->whatsapp)
                         <li class="list-group-item"><a target="_blank" href="https://wa.me/55{{ $data->whatsapp }}"><i class="bi bi-whatsapp"></i> {{ $data->whatsapp }}</a></li>
@@ -96,7 +96,7 @@
                     @endif
                 </ul>
 
-                <h3>Recomendações</h3>
+                <h4 class="space-3">Recomendações</h4>
                 <p>Dê uma nota para sua experiência (Obrigatório)?</p>
 
                 <div class="container parent">
@@ -166,7 +166,7 @@
             </div>
 
             <div class="col-md-6">
-                <h3>Anúncios Relacionados</h3>
+                <h4 class="space-3">Anúncios Relacionados</h4>
                 
                 <div class="col-md-7 col-sm-12">
                     <div class="list-main__item">
