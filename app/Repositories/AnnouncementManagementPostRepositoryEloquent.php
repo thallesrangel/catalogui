@@ -51,4 +51,12 @@ class AnnouncementManagementPostRepositoryEloquent implements AnnouncementManage
    
         return $request->announcement_id;
     }
+
+    public function disable($id)
+    {
+        $announcementManagementPost = $this->announcementManagementPost->where('user_id', session('user.id'))->find($id);
+        $announcementManagementPost->update(['flag_status' => "inactivated" ]);
+
+        return $announcementManagementPost;
+    }
 }

@@ -37,4 +37,12 @@ class AnnouncementManagementCouponRepositoryEloquent implements AnnouncementMana
    
         return $request->announcement_id;
     }
+
+    public function disable($id)
+    {
+        $announcementManagementCoupon = $this->announcementManagementCoupon->where('user_id', session('user.id'))->find($id);
+        $announcementManagementCoupon->update(['flag_status' => "inactivated" ]);
+
+        return $announcementManagementCoupon;
+    }
 }

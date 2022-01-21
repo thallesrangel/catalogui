@@ -41,4 +41,16 @@ class AnnouncementManagementController extends Controller
 
         return redirect()->route('management', $idAnnouncement )->with('success', 'Registrado com sucesso.');
     }
+
+    public function disablePost($id)
+    {
+        $this->announcementManagementPostService->disable($id);
+        //return redirect()->route('dashboard');
+    }
+
+    public function disableCoupon($id)
+    {
+        $this->announcementManagementCouponService->disable($id);
+        //return redirect()->route('dashboard');
+    }
 }

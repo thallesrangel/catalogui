@@ -39,7 +39,10 @@ Route::middleware([ UserAuthenticate::class ])->group(function () {
         Route::get('/', [ DashboardController::class, 'get' ])->name('dashboard');
         Route::get('/anuncio/{id}/gerenciar', [ AnnouncementManagementController::class, 'index' ])->name('management');
         Route::post('/anuncio/{id}/gerenciar/post/store', [ AnnouncementManagementController::class, 'storePost' ])->name('management.post.store');
+        Route::delete('/anuncio/{id}/gerenciar/post/inativar', [ AnnouncementManagementController::class, 'disablePost'])->name('management.post.disable');
+
         Route::post('/anuncio/{id}/gerenciar/coupon/store', [ AnnouncementManagementController::class, 'storeCoupon' ])->name('management.coupon.store');
+        Route::delete('/anuncio/{id}/gerenciar/coupon/inativar', [ AnnouncementManagementController::class, 'disableCoupon'])->name('management.coupon.disable');
     });
 
     Route::get('/announcement/create', [ AnnouncementController::class, 'create' ])->name('announcement.create');

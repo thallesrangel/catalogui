@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Http\Requests\AnnouncementManagementPostRequest;
 use App\Repositories\Contracts\AnnouncementManagementPostRepositoryInterface;
+use InvalidArgumentException;
 
 class AnnouncementManagementPostService
 {
@@ -22,5 +23,16 @@ class AnnouncementManagementPostService
     public function storePost(AnnouncementManagementPostRequest $request)
     {
         return $this->announcementManagementPostRepository->storePost($request);
+    }
+
+    public function disable($id)
+    {
+        try{
+            $this->announcementManagementPostRepository->disable($id);
+        } catch(\Exception $e) {
+            throw new InvalidArgumentException('Não foi possível deletar o registro');
+        }
+        
+        return redirect()->route('dashboard')->with("success", "Registro excluído com sucesso");
     }
 }

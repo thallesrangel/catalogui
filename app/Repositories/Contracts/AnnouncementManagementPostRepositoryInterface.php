@@ -6,4 +6,5 @@ interface AnnouncementManagementPostRepositoryInterface
 {
     public function getPost($idAnnouncement);
     public function storePost($request);
+    public function disable($id);
 }

@@ -114,7 +114,7 @@ class AnnouncementRepositoryEloquent implements AnnouncementRepositoryInterface
 
     public function disable($id)
     {
-        $announcement = $this->announcement->find($id);
+        $announcement = $this->announcement->where('user_id', session('user.id'))->find($id);
         $announcement->update(['flag_status' => "inactivated" ]);
 
         return $announcement;

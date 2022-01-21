@@ -60,8 +60,14 @@
                         <h4>{{ $item->title }}</h4>
                         <h5>{{ $item->value }}</h5>
                         
-                        <ul class="list-inline ">
-                            <li class="list-inline-item"><a class="txt-red" href="#"><i class="bi bi-x-lg"></i> Excluir</a></li>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <form action="{{ route('management.post.disable', $item->id)  }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn btn-sm btn-default txt-red" type="submit"><i class="bi bi-x-lg"></i> Excluir</button>
+                                </form>
+                            </li>
                         </ul>
                     </div>
                 @endforeach
@@ -131,7 +137,13 @@
                         </div>
                     </div>
                     <ul class="list-inline ">
-                        <li class="list-inline-item"><a class="txt-red" href="#"><i class="bi bi-x-lg"></i> Excluir</a></li>
+                        <li class="list-inline-item">
+                            <form action="{{ route('management.coupon.disable', $item->id)  }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-sm btn-default txt-red" type="submit"><i class="bi bi-x-lg"></i> Excluir</button>
+                            </form>
+                        </li>
                     </ul>
                 </div>
             @endforeach
