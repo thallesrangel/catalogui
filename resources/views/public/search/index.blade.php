@@ -19,16 +19,19 @@
         </div>
 
         <div class="col-md-1 col-sm-12">
-            <select class="form-select" name="category">
-                <option value="1">ES</option>
-                <option value="1">SP</option>
+            <select class="form-control" id="input-states" name="state_id">
+                <option value="">UF</option>
+                @foreach($states as $item)
+                    <option value="{{ $item['sigla'] }}">{{ $item['sigla'] }}</option>
+                @endforeach
             </select>
         </div>
 
         <div class="col-md-2 col-sm-12">
-            <select class="form-select" name="category">
-                <option value="1">Fundão</option>
+            <select id="city" class="form-control" id="input-city" name="city_id" required>
+                <option value="">Selecione uma Cidade</option>
             </select>
+            <p class="txt-red">{{ $errors->first('city_id') }}</p>
         </div>
 
         <div class="col-md-3 col-sm-12">
