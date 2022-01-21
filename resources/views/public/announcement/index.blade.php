@@ -28,16 +28,16 @@
         @endforeach
     </div>
 
-    @if(!isset($data->main_link))
+    @if(isset($data->main_link))
         <div class="text-center">
-            <a class="btn btn-outline-danger" href="#" target="_blank" name="main_link">Acessar</a>
+            <a class="btn btn-outline-danger" href="{{ $data->main_link }}" target="_blank" name="main_link">{{{ $data->title_main_link or 'Acessar' }}}</a>
         </div>
     @endif
 
-    @if(isset($data->description))
+    @if(isset($data->information))
         <div class="row div-info space-3">
             <h3>Informações</h3>
-            <p>{!! $data->description !!}</p>
+            <p>{!! $data->information !!}</p>
         </div>
     @endif
 
