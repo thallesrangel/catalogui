@@ -3,7 +3,7 @@
     background-color: #3742fa;
     border: 1px solid #3742fa;
     color: #FFF !important;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .btn-primary:hover
@@ -16,15 +16,14 @@
 .btn-outline-primary
 {
     border: 1px solid #3742fa;
-    border-radius: 10px;
     color: #3742fa !important;
+    border-radius: 6px;
 }
 
 .btn-outline-primary:hover
 {
     border: 1px solid #3742fa;
     background: #FFF;
-    border-radius: 10px;
     color: #3742fa !important;
 }
 
@@ -33,11 +32,25 @@
     background-color: #f39c12;
     border: 1px solid #f39c12;
     color: #FFF !important;
-    border-radius: 10px;
 }
 
 .btn-secondary:hover
 {
     background-color: #e67e22;
     border: 1px solid #e67e22;
+}
+
+
+.btn-outline-secondary
+{
+    border: 1px solid #e67e22;
+    color: #e67e22 !important;
+    border-radius: 6px;
+}
+
+.btn-outline-secondary:hover
+{
+    border: 1px solid #e67e22;
+    background: #FFF;
+    color: #e67e22 !important;
 }

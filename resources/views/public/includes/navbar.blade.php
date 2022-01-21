@@ -11,7 +11,7 @@
             <a class="nav-link active" href="{{ route('search') }}">Filtros</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link btn btn-primary" href="{{ route('login') }}">Acessar sua Conta</a>
+            <a class="nav-link btn btn-outline-secondary" href="{{ route('login') }}">Acessar sua Conta</a>
         </li>
     </ul>
 </nav>
