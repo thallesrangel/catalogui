@@ -1,4 +1,4 @@
-@extends('template-default')
+@extends('template-dashboard')
 
 @section('content')
     @include('dashboard.includes.navbar')
@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-md-8">
                 <label for="description" class="form-label">Descrição *</label>
-                <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+                <textarea id="description" name="description"></textarea>
                 <p class="txt-red">{{ $errors->first('description') }}</p>
             </div>
         </div>
@@ -105,7 +105,7 @@
 
             <div class="col-md-3">
                 <label for="instagram" class="form-label">Instagram</label>
-                <input type="text" class="form-control" id="instagram" name="instagram" placeholder="ex: @rangelthr">
+                <input type="text" class="form-control" id="instagram" name="instagram" placeholder="ex: rangelthr">
                 <p class="txt-red">{{ $errors->first('instagram') }}</p>
             </div>
 

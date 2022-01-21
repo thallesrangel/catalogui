@@ -15,7 +15,7 @@
             <a href="#" class="btn btn-sm btn-light"><i class="bi bi-bookmark-check"></i> Reivindicar</a>
             <a href="#" class="btn btn-sm btn-outline-danger"><i class="bi bi-flag"></i> Denunciar</a>
             <p>
-                {{ $data->description }}
+                {!! $data->description !!}
             </p>
         </div>
     </div>
