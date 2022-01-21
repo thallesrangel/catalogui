@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Http\Requests\AnnouncementRequest;
 use App\Repositories\Contracts\AnnouncementRepositoryInterface;
+use InvalidArgumentException;
 
 class AnnouncementService
 {
@@ -18,7 +19,7 @@ class AnnouncementService
     {
         $status = match($request->status) {
             'aguardando' => 'waiting',
-            'inativado' => 'iantivad',
+            'inativado' => 'inactivated',
             'expirado' => 'expired',
             default => 'published'
         };
@@ -36,5 +37,16 @@ class AnnouncementService
     public function show($slug)
     {
         return $this->announcementRepository->show($slug);
+    }
+
+    public function disable($id)
+    {
+        try{
+            $this->announcementRepository->disable($id);
+        } catch(\Exception $e) {
+            throw new InvalidArgumentException('Não foi possível deletar o registro');
+        }
+        
+        return redirect()->route('dashboard')->with("success", "Registro excluído com sucesso");
     }
 }

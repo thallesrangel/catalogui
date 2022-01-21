@@ -9,4 +9,5 @@ interface AnnouncementRepositoryInterface
     public function get($request);
     public function store(AnnouncementRequest $request);
     public function show($slug);
+    public function disable($id);
 }

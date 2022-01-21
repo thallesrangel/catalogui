@@ -111,4 +111,12 @@ class AnnouncementRepositoryEloquent implements AnnouncementRepositoryInterface
                                 ->with('subcategory')
                                 ->first();
     }
+
+    public function disable($id)
+    {
+        $announcement = $this->announcement->find($id);
+        $announcement->update(['flag_status' => "inactivated" ]);
+
+        return $announcement;
+    }
 }

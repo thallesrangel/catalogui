@@ -50,9 +50,15 @@
                             <p><i class="bi bi-calendar-week"></i> {{ Carbon\Carbon::parse($item->created_at)->format('d/m/Y') }} ás {{ Carbon\Carbon::parse($item->created_at)->format('H:s') }}</p>
 
                             <ul class="list-inline">
-                                <li class="list-inline-item"><a class="txt-green" href="{{ route('management', $item->id) }}"><i class="bi bi-speedometer2"></i> Gerenciar</a></li>
+                                <li class="list-inline-item"><a class=" btn btn-default txt-green" href="{{ route('management', $item->id) }}"><i class="bi bi-speedometer2"></i> Gerenciar</a></li>
                                 <!-- <li class="list-inline-item"><a href="#"><i class="bi bi-pencil-square"></i> Editar</a></li> -->
-                                <li class="list-inline-item"><a class="txt-red" href="#"><i class="bi bi-x-lg"></i> Inativar</a></li>
+                                <li class="list-inline-item">
+                                    <form action="{{ route('announcement.disable', $item->id)  }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="btn btn-sm btn-default txt-red" type="submit"><i class="bi bi-trash2"></i> Inativar</button>
+                                    </form>
+                                </li>
                             </ul>
                         </div>
 
