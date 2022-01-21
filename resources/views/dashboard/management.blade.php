@@ -121,7 +121,6 @@
                 </div>
             </form>
         </div>
-
         
         <div class="row">
             @foreach($coupons as $item)
