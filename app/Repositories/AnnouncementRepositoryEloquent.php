@@ -29,6 +29,13 @@ class AnnouncementRepositoryEloquent implements AnnouncementRepositoryInterface
                             ->get();
     }
 
+    public function count()
+    {
+        return $this->announcement->where('user_id', session('user.id'))
+                                    ->where('flag_status', "published")
+                                    ->count();
+    }
+
     public function search()
     {
         return $this->announcement->where( 'flag_status', 'published' )

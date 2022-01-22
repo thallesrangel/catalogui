@@ -27,6 +27,11 @@ class AnnouncementService
         return $this->announcementRepository->get($status);
     }
 
+    public function count()
+    {
+        return $this->announcementRepository->count();
+    }
+    
     public function store(AnnouncementRequest $data)
     {
         $response = $this->announcementRepository->store($data);

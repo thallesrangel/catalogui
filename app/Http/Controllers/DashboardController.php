@@ -17,7 +17,8 @@ class DashboardController extends Controller
     public function get(AnnouncementFilterDashboardRequest $request)
     {
         $announcement = $this->announcementService->get($request);
+        $announcementCount = $this->announcementService->count();
 
-        return view('dashboard.dashboard', ['data' => $announcement ]);
+        return view('dashboard.dashboard', ['data' => $announcement, 'announcementCount' => $announcementCount ]);
     }
 }

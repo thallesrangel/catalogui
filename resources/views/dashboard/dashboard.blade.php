@@ -6,7 +6,7 @@
     <div class="container">
         <h4 class="space-3">Meus Anúncio</h4>
         <ul class="list-inline list-menu-my-announcement">
-            <li class="list-inline-item"><a href="{{ route('dashboard') }}">Publicados</a></li>
+            <li class="list-inline-item"><a href="{{ route('dashboard') }}">Publicados ({{ $announcementCount }})</a></li>
             <li class="list-inline-item"><a href="?status=aguardando">Aguardando Publicação</a></li>
             <li class="list-inline-item"><a href="?status=inativado">Inativados</a></li>
             <!--<li class="list-inline-item"><a href="?status=expirado">Expirados</a></li>-->
