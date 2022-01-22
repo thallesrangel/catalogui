@@ -35,7 +35,7 @@
                 <span class="alert-orange">Os anúncios abaixo serão processados. Acompanhe o status do seu anúncio.</span>
                 <p class="txt-orange space-3"><i class="bi bi-alarm"></i> AGUARDANDO PUBLICAÇÃO</p>
 
-                @foreach($data as $item)
+                @forelse($data as $item)
                     <div class="row itens-my-announcement">
                         <div class="col-md-2 d-flex justify-content-center">
                             <img class="img-fluid" src="{{ asset('img/thumbnails') .'/'. $item->img_profile }}">
@@ -47,7 +47,9 @@
                             <p><i class="bi bi-calendar-week"></i> {{ Carbon\Carbon::parse($item->created_at)->format('d/m/Y') }} ás {{ Carbon\Carbon::parse($item->created_at)->format('H:s') }}</p>
                         </div>
                     </div>
-                @endforeach
+                @empty
+                    <p>Não há publicações. <a class="txt-orange" href="{{ route('announcement.create') }}">Anuncie</a> agora.</p>
+                @endforelse
                 @break
             @case('expirado')
                 
@@ -55,8 +57,8 @@
             @default
                 
                 <p class="txt-green"><i class="bi bi-check-all"></i> PUBLICADOS</p>
-                
-                @foreach($data as $item)
+
+                @forelse($data as $item)
                     <div class="row itens-my-announcement">
                         <div class="col-sm-12 col-md-2">
                             <img class="img-fluid" src="{{ asset('img/thumbnails') .'/'. $item->img_profile }}">
@@ -98,7 +100,9 @@
                             <a class="btn btn-outline-primary" href="#">Decolar!</a>
                         </div>
                     </div>
-                @endforeach
+                @empty
+                <p>Não há publicações. <a class="txt-orange" href="{{ route('announcement.create') }}">Anuncie</a> agora.</p>
+                @endforelse
         @endswitch
     </div>
 @endsection
