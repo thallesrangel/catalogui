@@ -165,13 +165,13 @@
             </div>
             <div class="row">
                 <div class="col-md-2">
-                    <label for="cep" class="form-label">CEP *</label>
+                    <label for="cep" class="form-label">CEP</label>
                     <input type="text" class="form-control" id="facebook" name="cep">
                     <p class="txt-red">{{ $errors->first('cep') }}</p>
                 </div>
 
                 <div class="col-md-3">
-                    <label for="district" class="form-label">Bairro *</label>
+                    <label for="district" class="form-label">Bairro</label>
                     <input type="text" class="form-control" id="district" name="district">
                     <p class="txt-red">{{ $errors->first('district') }}</p>
                 </div>

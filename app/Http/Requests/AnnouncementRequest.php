@@ -31,11 +31,11 @@ class AnnouncementRequest extends FormRequest
             'site' => 'string|nullable',
             'state_id' => 'required',
             'city_id' => 'required',
-            'cep' => 'required',
-            'district' => 'required',
-            'street' => 'required',
+            'cep' => 'string|nullable',
+            'district' => 'string|nullable',
+            'street' => 'string|nullable',
             'complement' => 'string|nullable',
-            'number' => 'required|numeric',
+            'number' => 'numeric|nullable',
         ];
     }
     

@@ -35,11 +35,11 @@ class CreateAnnouncement extends Migration
             $table->string('site')->nullable();
             $table->string('state_id');
             $table->string('city_id');
-            $table->string('cep');
-            $table->string('district');
-            $table->string('street');
+            $table->string('cep')->nullable();
+            $table->string('district')->nullable();
+            $table->string('street')->nullable();
             $table->string('complement')->nullable();
-            $table->string('number');
+            $table->string('number')->nullable();
             $table->string('flag_status')->default('waiting');
             $table->timestamps();
         });
