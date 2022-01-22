@@ -65,8 +65,18 @@
         <div class="row space-3">
             <div class="col-md-6">
                 <h4>Localização</h4>
+                
                 <ul class="list-group list-infos">
-                    <li class="list-group-item"><a href="#"><i class="bi bi-geo-alt"></i> {{ $data->cep }}, {{ $data->street }}, {{ $data->number }} - {{ $data->district }}, {{ $data->city_id }} - {{ $data->state_id }}</a></li>
+                    <li class="list-group-item">
+                        <a href="#"><i class="bi bi-geo-alt"></i> 
+                        {{ $data->cep ? $data->cep . ',' : '' }} 
+                        {{ $data->street ? $data->street . ',' : '' }} 
+                        {{ $data->number ? $data->number . ',' : '' }} 
+                        {{ $data->district ? $data->district . ',' : '' }}
+                        {{ $data->district ? $data->state_id . '-' : '' }}
+                        {{ $data->district ? $data->city_id . '' : '' }}
+                        </a>
+                    </li>
                 </ul>
                 
                 <h4>Contato</h4>

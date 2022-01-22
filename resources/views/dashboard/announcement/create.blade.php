@@ -177,7 +177,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <label for="street" class="form-label">Logradouro *</label>
+                    <label for="street" class="form-label">Logradouro</label>
                     <input type="text" class="form-control" id="street" name="street">
                     <p class="txt-red">{{ $errors->first('street') }}</p>
                 </div>
@@ -191,7 +191,7 @@
                 </div>
 
                 <div class="col-md-1">
-                    <label for="number" class="form-label">Número *</label>
+                    <label for="number" class="form-label">Número</label>
                     <input type="text" class="form-control" id="number" name="number">
                     <p class="txt-red">{{ $errors->first('number') }}</p>
                 </div>
