@@ -4,9 +4,11 @@
     @include('dashboard.includes.navbar')
 
     <div class="container">
-        <h3 class="space-3">Gerenciar Anúncio</h3>   
-        <h5 class="mb-3">Publicações</h5>
-        <div class="container">
+        <h3>Gerenciar Anúncio</h3>   
+
+        <h5 class="mt-3">Cupons de Descontos</h5>
+        <span class="txt-orange">Limite de 12 publicações</span>
+        <div class="container mt-3">
 
             <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever=""><i class="bi bi-plus-square"></i> Adicionar publicação</button>
 

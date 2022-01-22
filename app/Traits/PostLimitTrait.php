@@ -6,7 +6,7 @@ trait PostLimitTrait
 {
     public function checkPostLimit($number)
     {
-        if ($number >= 3) {
+        if ($number >= 12) {
             return true;
         }
     }
