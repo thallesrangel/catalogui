@@ -59,7 +59,7 @@ class AnnouncementController extends Controller
             return redirect()->route('announcement.create')->with('error', 'Ocorreu um erro. Verifique os campos.');
         }
         
-        return redirect()->route('dashboard')->with('success', 'Registrado com sucesso.');
+        return redirect()->route('dashboard', ['status'=>'aguardando'])->with('success', 'Registrado com sucesso.');
     }
 
     public function disable($id)
