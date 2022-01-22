@@ -12895,59 +12895,59 @@ a
 }
 .btn-primary
 {
-    background-color: #3742fa;
-    border: 1px solid #3742fa;
+    background-color: #10AC84;
+    border: 1px solid #10AC84;
     color: #FFF !important;
     border-radius: 6px;
 }
 
 .btn-primary:hover
 {
-    background-color: #5352ed;
-    border: 1px solid #5352ed;
+    background-color: #10AC84;
+    border: 1px solid #10AC84;
 }
 
 
 .btn-outline-primary
 {
-    border: 1px solid #3742fa;
-    color: #3742fa !important;
+    border: 1px solid #10AC84;
+    color: #10AC84 !important;
     border-radius: 6px;
 }
 
 .btn-outline-primary:hover
 {
-    border: 1px solid #3742fa;
+    border: 1px solid #10AC84;
     background: #FFF;
-    color: #3742fa !important;
+    color: #10AC84 !important;
 }
 
 .btn-secondary
 {
-    background-color: #f39c12;
-    border: 1px solid #f39c12;
+    background-color: #08AEEA;
+    border: 1px solid #08AEEA;
     color: #FFF !important;
 }
 
 .btn-secondary:hover
 {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+    background-color: #08AEEA;
+    border: 1px solid #08AEEA;
 }
 
 
 .btn-outline-secondary
 {
-    border: 1px solid #e67e22;
-    color: #e67e22 !important;
+    border: 1px solid #08AEEA;
+    color: #08AEEA !important;
     border-radius: 6px;
 }
 
 .btn-outline-secondary:hover
 {
-    border: 1px solid #e67e22;
+    border: 1px solid #08AEEA;
     background: #FFF;
-    color: #e67e22 !important;
+    color: #08AEEA !important;
 }
 .cards-menu .card
 {
@@ -13169,7 +13169,8 @@ a
 .banner-initial > h1
 { 
     background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    //background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    background-image: linear-gradient(19deg, #08AEEA 0%, #2AF598 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-top: 0;

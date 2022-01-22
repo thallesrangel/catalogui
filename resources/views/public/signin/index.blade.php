@@ -23,7 +23,7 @@
               <button class="btn btn-lg btn-primary w-100" type="submit">Entrar</button>
               <a class="btn btn-link" href="#"><i class="bi bi-key"></i> Recuperar</i></a>
               <hr>
-              <a href="{{ route('user.create') }}" class="btn btn-lg btn-success">Criar Conta</a>
+              <a href="{{ route('user.create') }}" class="btn btn-lg btn-secondary">Criar Conta</a>
             </div>
           </form> 
         </div>
