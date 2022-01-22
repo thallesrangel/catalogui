@@ -6,12 +6,12 @@
     <div class="container">
         <h4 class="space-3">Anunciar Negócios, Estabelecimentos e Serviços</h4>   
 
-        <form method="post" action="{{ route('announcement.store') }}" enctype="multipart/form-data" class="form-announcement">
+        <form method="POST" action="{{ route('announcement.store') }}" enctype="multipart/form-data" class="form-announcement">
             @csrf
             <div class="row">
                 <div class="col-md-4">
                     <label for="title" class="form-label">Título *</label>
-                    <input type="text" class="form-control" id="title" name="title" required>
+                    <input type="text" class="form-control" id="title" name="title">
                     <p class="txt-red">{{ $errors->first('title') }}</p>
                 </div>
             </div>
@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <label for="description" class="form-label">Descrição *</label>
-                    <textarea id="description" name="description" required></textarea>
+                    <textarea id="description" name="description"></textarea>
                     <p class="txt-red">{{ $errors->first('description') }}</p>
                 </div>
             </div>
@@ -197,7 +197,7 @@
                 </div>
             </div>
 
-            <button class="btn btn-primary">Salvar</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
         </form>
     </div>
         
