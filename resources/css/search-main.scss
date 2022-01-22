@@ -10,8 +10,26 @@
 
 .div-filter
 {
-    margin: 20px 10px;
-    padding: 25px 0px;
+    background-color: #00BFA6;
+    height: 240px;
+    color: #FFF;
+
+    text-align: center;
+}
+
+.div-filter img
+{
+    max-height: 200px;
+    margin-top: -80px;
+    width: auto;
+}
+
+
+.div-input-filter
+{
+    padding: 1rem 2rem;
+    background-color: #FFF;
+    margin: -40px 30px;
     border-radius: 8px;
     -webkit-box-shadow: 0px 6px 30px 0px rgb(0 0 0 / 10%);
     -moz-box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.1);

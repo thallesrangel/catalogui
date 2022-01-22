@@ -2,8 +2,19 @@
 
 @section('content')
     @include('public.includes.navbar')
-    <div class="container">
-        <div class="row div-filter d-flex justify-content-center">
+    <div class="div-filter">
+        <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-sm-12 col-md-6">
+                <h1>Encontre Negócios, Serviços e Eventos</h1>
+                <h4>Conheça detalhes e obtenha descontos</h4>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <img class="img-fluid" src="{{ asset('img/bg-search.svg')}}">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row div-input-filter d-flex justify-content-center">
             <div class="col-md-2 col-sm-12">
                 <select class="form-select" name="category">
                     <option value="1">Idioma</option>
@@ -27,7 +38,7 @@
                 </select>
             </div>
 
-            <div class="col-md-2 col-sm-12">
+            <div class="col-md-3 col-sm-12">
                 <select id="city" class="form-control" id="input-city" name="city_id" required>
                     <option value="">Selecione uma Cidade</option>
                 </select>
@@ -42,11 +53,13 @@
                 <button type="submit" class="btn btn-outline-primary">Buscar</button>
             </div>
         </div>
+    </div>
 
+    <div class="container">
         <div class="row space-3">
             
             @foreach($data as $item)
-                <div class="col-md-3 col-sm-12">
+                <div class="col-md-3 col-sm-12 mt-5">
                     <div class="list-main__item">
                         <a href="{{ route('announcemen.datails', $item->slug) }}" class="card-default">
                                                         
