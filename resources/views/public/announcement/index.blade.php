@@ -31,7 +31,7 @@
 
         @if(isset($data->main_link))
             <div class="text-center">
-                <a class="btn btn-outline-danger" href="{{ $data->main_link }}" target="_blank" name="main_link">{{{ $data->title_main_link or 'Acessar' }}}</a>
+                <a class="btn btn-outline-danger" href="{{ $data->main_link }}" target="_blank" name="main_link">{{ $data->title_main_link ?? 'Acessar' }}</a>
             </div>
         @endif
 
