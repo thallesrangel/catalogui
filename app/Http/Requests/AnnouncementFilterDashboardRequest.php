@@ -14,7 +14,8 @@ class AnnouncementFilterDashboardRequest extends FormRequest
     public function rules()
     {
         return [
-            'status' => 'string'
+            'status' => 'string|nullable',
+            'title' => 'string|nullable',
         ];
     }
 }

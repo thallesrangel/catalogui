@@ -20,11 +20,24 @@ class AnnouncementService
         $status = match($request->status) {
             'aguardando' => 'waiting',
             'inativado' => 'inactivated',
-            'expirado' => 'expired',
             default => 'published'
         };
 
         return $this->announcementRepository->get($status);
+    }
+
+    public function getToAdmin($request)
+    {
+        $status = match($request->status) {
+            'aguardando' => 'waiting',
+            'inativado' => 'inactivated',
+            'expirado' => 'expired',
+            default => 'published'
+        };
+
+        $request['status'] = $status;
+
+        return $this->announcementRepository->getToAdmin($request);
     }
 
     public function count()

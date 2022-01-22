@@ -29,6 +29,16 @@ class AnnouncementRepositoryEloquent implements AnnouncementRepositoryInterface
                             ->get();
     }
 
+    public function getToAdmin($request)
+    {
+        return $this->announcement->where('flag_status', $request->status )
+                            ->where('title', 'like', '%'.$request->title.'%')
+                            ->orderBy('id', 'DESC')
+                            ->with('category')
+                            ->with('subcategory')
+                            ->get();
+    }
+
     public function count()
     {
         return $this->announcement->where('user_id', session('user.id'))

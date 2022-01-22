@@ -26,7 +26,7 @@
                         <div class="col-md-6">
                             <h4>{{ $item->title }}</h4>
                             <h6 class="txt-green">{{ $item->category->name }} <i class="bi bi-caret-right"></i> {{ $item->subcategory->name }}</h6>
-                            <p><i class="bi bi-calendar-week"></i> {{ Carbon\Carbon::parse($item->created_at)->format('d/m/Y') }} ás {{ Carbon\Carbon::parse($item->created_at)->format('H:s') }}</p>
+                            <p title="Data de Criação"><i class="bi bi-calendar-week"></i> {{ Carbon\Carbon::parse($item->created_at)->format('d/m/Y') }} ás {{ Carbon\Carbon::parse($item->created_at)->format('H:s') }}</p>
                         </div>
                     </div>
                 @endforeach
@@ -44,7 +44,7 @@
                         <div class="col-md-6">
                             <h4>{{ $item->title }}</h4>
                             <h6 class="txt-green">{{ $item->category->name }} <i class="bi bi-caret-right"></i> {{ $item->subcategory->name }}</h6>
-                            <p><i class="bi bi-calendar-week"></i> {{ Carbon\Carbon::parse($item->created_at)->format('d/m/Y') }} ás {{ Carbon\Carbon::parse($item->created_at)->format('H:s') }}</p>
+                            <p title="Data de Criação"><i class="bi bi-calendar-week"></i> {{ Carbon\Carbon::parse($item->created_at)->format('d/m/Y') }} ás {{ Carbon\Carbon::parse($item->created_at)->format('H:s') }}</p>
                         </div>
                     </div>
                 @empty
@@ -67,7 +67,7 @@
                         <div class="col-sm-12 col-md-4">
                             <a href="{{ route('announcemen.datails', $item->slug ) }}" class="h4">{{ $item->title }}</a>
                             <h6 class="txt-green">{{ $item->category->name }} <i class="bi bi-caret-right"></i> {{ $item->subcategory->name }}</h6>
-                            <p><i class="bi bi-calendar-week"></i> {{ Carbon\Carbon::parse($item->created_at)->format('d/m/Y') }} ás {{ Carbon\Carbon::parse($item->created_at)->format('H:s') }}</p>
+                            <p title="Data de Criação"><i class="bi bi-calendar-week"></i> {{ Carbon\Carbon::parse($item->created_at)->format('d/m/Y') }} ás {{ Carbon\Carbon::parse($item->created_at)->format('H:s') }}</p>
 
                             <ul class="list-inline">
                                 <li class="list-inline-item"><a class=" btn btn-default txt-green" href="{{ route('management', $item->id) }}"><i class="bi bi-speedometer2"></i> Gerenciar</a></li>

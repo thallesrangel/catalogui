@@ -16,6 +16,12 @@ class DashboardController extends Controller
 
     public function get(AnnouncementFilterDashboardRequest $request)
     {
+        if (session('user.role') == 'admin') {
+            $announcement = $this->announcementService->getToAdmin($request);
+            
+            return view('dashboard.dashboard-admin', ['data' => $announcement ]);
+        }
+
         $announcement = $this->announcementService->get($request);
         $announcementCount = $this->announcementService->count();
 
