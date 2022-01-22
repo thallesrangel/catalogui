@@ -21,3 +21,15 @@
         });
    </script>
 @endif
+
+@if (Session::has('warning'))
+   <script>
+        Swal.fire({
+            icon: 'warning',
+            title: 'Aviso',
+            text: '{{ session('warning') }}',
+            showConfirmButton: false,
+            timer: 2000
+    })
+   </script>
+@endif

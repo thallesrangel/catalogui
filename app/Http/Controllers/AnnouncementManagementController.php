@@ -31,6 +31,10 @@ class AnnouncementManagementController extends Controller
     public function storePost(AnnouncementManagementPostRequest $request)
     {
         $idAnnouncement = $this->announcementManagementPostService->storePost($request);
+        
+        if (empty($idAnnouncement)) {
+            return redirect()->route('management', $request->id )->with('warning', 'Atingiu o limite.');
+        }
 
         return redirect()->route('management', $idAnnouncement )->with('success', 'Registrado com sucesso.');
     }

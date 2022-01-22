@@ -14,11 +14,17 @@ class AnnouncementManagementCouponService
     {
         $this->announcementManagementCouponRepository = $announcementManagementCouponRepository;
     }
-
+    
     public function getCoupon($idAnnouncement)
     {
         return $this->announcementManagementCouponRepository->getCoupon($idAnnouncement);
     }
+
+    public function countCoupon()
+    {
+        return $this->announcementManagementCouponRepository->countCoupon();
+    }
+
 
     public function storeCoupon(AnnouncementManagementCouponRequest $request)
     {

@@ -24,6 +24,13 @@ class AnnouncementManagementPostRepositoryEloquent implements AnnouncementManage
                                                 ->get();
     }
 
+    public function countPost()
+    {
+        return $this->announcementManagementPost->where('user_id', session('user.id'))
+                                                ->where('flag_status', "enabled")
+                                                ->count();
+    }
+
     public function storePost($request)
     {
         $announcementManagementPost = new $this->announcementManagementPost;

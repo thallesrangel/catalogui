@@ -22,6 +22,13 @@ class AnnouncementManagementCouponRepositoryEloquent implements AnnouncementMana
                                                 ->get();
     }
 
+    public function countCoupon()
+    {
+        return $this->announcementManagementCoupon->where('user_id', session('user.id'))
+                                    ->where('flag_status', "enabled")
+                                    ->count();
+    }
+
     public function storeCoupon($request)
     {
         $announcementManagementCoupon = new $this->announcementManagementCoupon;
