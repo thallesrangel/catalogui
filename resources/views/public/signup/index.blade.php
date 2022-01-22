@@ -3,7 +3,7 @@
 @section('content')
     
 <div class="row h-100 justify-content-center align-items-center">
-    <div class="col-sm-12 col-md-4">
+    <div class="col-sm-12 col-md-3">
     <img src="{{ asset('img/logo.png') }}" class="img-fluid space-3">
     <h2>Cadastre-se</h2>
     <p>É rapido e fácil.</p>
