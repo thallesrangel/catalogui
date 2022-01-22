@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <label for="title" class="form-label">Título *</label>
-                    <input type="text" class="form-control" id="title" name="title">
+                    <input type="text" class="form-control" id="title" name="title" required>
                     <p class="txt-red">{{ $errors->first('title') }}</p>
                 </div>
             </div>
@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <label for="description" class="form-label">Descrição *</label>
-                    <textarea id="description" name="description"></textarea>
+                    <textarea id="description" name="description" required></textarea>
                     <p class="txt-red">{{ $errors->first('description') }}</p>
                 </div>
             </div>
@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <label for="category" class="form-label">Categoria *</label>
-                    <select class="form-select" id="category" name="category_id">
+                    <select class="form-select" id="category" name="category_id" required>
                         <option value="">Escolha uma opção</option>
                         <option value="1">Imobiliário</option>
                         <option value="1">Saúde</option>
@@ -41,7 +41,7 @@
 
                 <div class="col-md-3">
                     <label for="subcategory" class="form-label">Subcategoria *</label>
-                    <select class="form-select" id="subcategory" name="subcategory_id">
+                    <select class="form-select" id="subcategory" name="subcategory_id" required>
                         <option value="">Escolha uma opção</option>
                         <option value="1">Saúde</option>
                         <option value="2">Esportes</option>
@@ -104,13 +104,13 @@
             <div class="row">
                 <div class="col-md-3">
                     <label for="email" class="form-label">Email *</label>
-                    <input type="email" class="form-control" id="email" name="email">
+                    <input type="email" class="form-control" id="email" name="email" required>
                     <p class="txt-red">{{ $errors->first('email') }}</p>
                 </div>
 
                 <div class="col-md-2">
                     <label for="tel" class="form-label">Telefone *</label>
-                    <input type="text" class="form-control" id="tel" name="tel">
+                    <input type="text" class="form-control" id="tel" name="tel" required>
                     <p class="txt-red">{{ $errors->first('tel') }}</p>
                 </div>
 
@@ -146,7 +146,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <label for="input-states" class="form-label">Estado *</label>
-                    <select class="form-control" id="input-states" name="state_id">
+                    <select class="form-control" id="input-states" name="state_id" required>
                         <option value="">Selecione um Estado</option>
                             @foreach($states as $item)
                                 <option value="{{ $item['sigla'] }}">{{ $item['nome'] }}</option>
