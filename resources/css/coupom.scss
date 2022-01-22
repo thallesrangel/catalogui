@@ -43,14 +43,19 @@
     max-height: 400px;
 }
 
-.card-announcement
+.card-announcement img
 {
     width: 293px;
     height: 293px;
+}
+
+.card-announcement
+{
+    width: 293px;
+    height: 100%;
     border: none;
     margin: 25px 0px;
 }
-
 
 .details-announcement h6
 {
