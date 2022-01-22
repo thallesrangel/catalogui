@@ -68,14 +68,13 @@
                 
                 <ul class="list-group list-infos">
                     <li class="list-group-item">
-                        <a href="#"><i class="bi bi-geo-alt"></i> 
+                        <i class="bi bi-geo-alt"></i> 
                         {{ $data->cep ? $data->cep . ',' : '' }} 
                         {{ $data->street ? $data->street . ',' : '' }} 
                         {{ $data->number ? $data->number . ',' : '' }} 
                         {{ $data->district ? $data->district . ',' : '' }}
                         {{ $data->district ? $data->state_id . '-' : '' }}
                         {{ $data->district ? $data->city_id . '' : '' }}
-                        </a>
                     </li>
                 </ul>
                 
