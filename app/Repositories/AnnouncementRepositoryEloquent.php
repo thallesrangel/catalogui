@@ -58,7 +58,7 @@ class AnnouncementRepositoryEloquent implements AnnouncementRepositoryInterface
                 $const->aspectRatio();
             })->save($filePath.'/'.$input['img_profile']);
     
-            $filePath = public_path('/img');
+            $filePath = public_path('/img/thumbnails');
             $image->move($filePath, $input['img_profile']);
 
         $announcement->img_profile = $input['img_profile'];
@@ -73,7 +73,7 @@ class AnnouncementRepositoryEloquent implements AnnouncementRepositoryInterface
                 $const->aspectRatio();
             })->save($filePath.'/'.$input['img_card']);
 
-            $filePath = public_path('/img');
+            $filePath = public_path('/img/card');
             $image->move($filePath, $input['img_card']);
 
         $announcement->img_card = $input['img_card'];
