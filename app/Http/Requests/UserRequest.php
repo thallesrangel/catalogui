@@ -15,9 +15,9 @@ class UserRequest extends FormRequest
     {
         return [
             'name' => 'required|max:30|string',
-            'email' => 'required|email', 
-            'document' => 'required|string', 
-            'password' => 'required|max:30',
+            'email' => 'required|email|unique:user', 
+            'document' => 'required|string|max:14|unique:user', 
+            'password' => 'required|string|max:30',
         ];
     }
     
@@ -26,6 +26,8 @@ class UserRequest extends FormRequest
         return [
             'required' => 'Campo obrigatório',
             'password.max' => 'Tamanho máximo de 30 caracteres',
+            'document.unique' => 'CPF/CNPJ já registrado',
+            'email.unique' => 'Email já registrado',
         ];
     }
 }

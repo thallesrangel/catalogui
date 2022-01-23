@@ -6,7 +6,7 @@
     <div class="container">
         <h3>Gerenciar Anúncio</h3>   
 
-        <h5 class="mt-3">Cupons de Descontos</h5>
+        <h5 class="mt-3">Publiçações</h5>
         <span class="txt-orange">Limite de 12 publicações</span>
         <div class="container mt-3">
 

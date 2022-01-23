@@ -60,6 +60,7 @@
             <div class="col-sm-12 col-md-3">
                 <p>ID:{{ $item->id }}</p>
                 <p>Contato: {{ $item->user->email }}</p>
+                <p class="cpfOuCnpj">{{ $item->user->document }}</p>
             </div>
         </div>
         @empty
