@@ -34,6 +34,7 @@ class AnnouncementRepositoryEloquent implements AnnouncementRepositoryInterface
         return $this->announcement->where('flag_status', $request->status )
                             ->where('title', 'like', '%'.$request->title.'%')
                             ->orderBy('id', 'DESC')
+                            ->with('user')
                             ->with('category')
                             ->with('subcategory')
                             ->get();

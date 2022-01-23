@@ -37,7 +37,6 @@
                 <a href="{{ route('announcemen.datails', $item->slug ) }}" class="h4">{{ $item->title }}</a>
                 <h6 class="txt-green">{{ $item->category->name }} <i class="bi bi-caret-right"></i> {{ $item->subcategory->name }}</h6>
                 <p title="Data de Criação"><i class="bi bi-calendar-week"></i> {{ Carbon\Carbon::parse($item->created_at)->format('d/m/Y') }} ás {{ Carbon\Carbon::parse($item->created_at)->format('H:s') }}</p>
-
                 <ul class="list-inline">
                     <li class="list-inline-item">
                         <form action="{{ route('announcement.approve', $item->id)  }}" method="POST">
@@ -53,7 +52,14 @@
                             <button class="btn btn-sm btn-default txt-red" type="submit"><i class="bi bi-trash2"></i> Inativar</button>
                         </form>
                     </li>
+
+                    <a class=" btn btn-default txt-green" href="#"><i class="bi bi-box-arrow-up-right"></i> Acessar Como</a>
                 </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-3">
+                <p>ID:{{ $item->id }}</p>
+                <p>Contato: {{ $item->user->email }}</p>
             </div>
         </div>
         @empty

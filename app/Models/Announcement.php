@@ -38,6 +38,11 @@ class Announcement extends Model
         'flag_status'
     ];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
     public function category()
     {
         return $this->belongsTo(CategoryAnnouncement::class, 'category_id');
