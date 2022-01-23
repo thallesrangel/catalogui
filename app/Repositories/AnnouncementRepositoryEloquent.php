@@ -122,7 +122,9 @@ class AnnouncementRepositoryEloquent implements AnnouncementRepositoryInterface
     public function show($slug)
     {
         return $this->announcement->where('slug', $slug)
-                                ->where('flag_status', 'published' )
+                                ->when(session('user.role') != 'admin', function ($query) {
+                                    $query->where('flag_status', 'published');
+                                })
                                 ->orderBy('id', 'DESC')
                                 ->with('category')
                                 ->with('subcategory')
