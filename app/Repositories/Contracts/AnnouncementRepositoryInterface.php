@@ -11,5 +11,6 @@ interface AnnouncementRepositoryInterface
     public function count();
     public function store(AnnouncementRequest $request);
     public function show($slug);
+    public function approve($id);
     public function disable($id);
 }

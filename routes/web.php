@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Middleware\UserAuthenticate;
+use App\Http\Middleware\CheckIsAdmin;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\SearchController;
@@ -48,6 +49,8 @@ Route::middleware([ UserAuthenticate::class ])->group(function () {
     Route::get('/announcement/create', [ AnnouncementController::class, 'create' ])->name('announcement.create');
     Route::post('/announcement/store', [ AnnouncementController::class, 'store' ])->name('announcement.store');
     Route::delete('/announcement/{id}/inativar', [ AnnouncementController::class, 'disable'])->name('announcement.disable');
+
+    Route::post('/announcement/{id}/aprovar', [ AnnouncementController::class, 'approve'])->name('announcement.approve')->middleware(CheckIsAdmin::class);
     
 });
 

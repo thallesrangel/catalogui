@@ -2,7 +2,7 @@
 
 @section('content')
     @include('dashboard.includes.navbar')
-
+    
     <div class="container">
         <h4 class="space-3">Dashboard | Admin</h4>
         
@@ -39,7 +39,13 @@
                 <p title="Data de Criação"><i class="bi bi-calendar-week"></i> {{ Carbon\Carbon::parse($item->created_at)->format('d/m/Y') }} ás {{ Carbon\Carbon::parse($item->created_at)->format('H:s') }}</p>
 
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a class=" btn btn-default txt-green" href="{{ route('management', $item->id) }}"><i class="bi bi-check-all"></i> Publicar</a></li>
+                    <li class="list-inline-item">
+                        <form action="{{ route('announcement.approve', $item->id)  }}" method="POST">
+                            @csrf
+                            @method('POST')
+                            <button class="btn btn-sm btn-default txt-green" type="submit"><i class="bi bi-check-all"></i> Publicar</button>
+                        </form>
+                    </li>
                     <li class="list-inline-item">
                         <form action="{{ route('announcement.disable', $item->id)  }}" method="POST">
                             @csrf

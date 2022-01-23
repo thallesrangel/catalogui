@@ -57,6 +57,15 @@ class AnnouncementService
         return $this->announcementRepository->show($slug);
     }
 
+    public function approve($id)
+    {
+        try{
+            return $this->announcementRepository->approve($id);
+        } catch(\Exception $e) {
+            throw new InvalidArgumentException('Não foi possível aprovar. Verifique o ID.');
+        }
+    }
+
     public function disable($id)
     {
         try{

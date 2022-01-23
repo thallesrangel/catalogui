@@ -62,9 +62,17 @@ class AnnouncementController extends Controller
         return redirect()->route('dashboard', ['status'=>'aguardando'])->with('success', 'Registrado com sucesso.');
     }
 
+    public function approve($id)
+    {
+        $this->announcementService->approve($id);
+
+        return redirect()->route('dashboard');
+    }
+
     public function disable($id)
     {
         $this->announcementService->disable($id);
+
         return redirect()->route('dashboard');
     }
 }

@@ -129,9 +129,20 @@ class AnnouncementRepositoryEloquent implements AnnouncementRepositoryInterface
                                 ->first();
     }
 
+    public function approve($id)
+    {
+        $announcement = $this->announcement->find($id);
+        $announcement->update(['flag_status' => "published" ]);
+
+        return $announcement;
+    }
+
     public function disable($id)
     {
-        $announcement = $this->announcement->where('user_id', session('user.id'))->find($id);
+        $announcement = $this->announcement->when(session('user.role') != 'admin', function ($query) {
+                                            $query->where('user_id', session('user.id'));
+                                        })
+                                        ->find($id);
         $announcement->update(['flag_status' => "inactivated" ]);
 
         return $announcement;
