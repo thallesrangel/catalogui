@@ -26,15 +26,14 @@
 
             <h4>Categorias</h4>
 
-            <div class="row">
+            <div class="row">      
                 <div class="col-md-3">
-                    <label for="category" class="form-label">Categoria *</label>
-                    <select class="form-select" id="category" name="category_id" required>
-                        <option value="">Escolha uma opção</option>
-                        <option value="1">Imobiliário</option>
-                        <option value="1">Saúde</option>
-                        <option value="2">Esportes</option>
-                        <option value="3">Serviços</option>
+                    <label for="input-category" class="form-label">Estado *</label>
+                    <select class="form-control" id="input-category" name="category_id" required>
+                        <option value="">Selecione uma categoria</option>
+                            @foreach($category as $item)
+                                <option value="{{ $item['id'] }}">{{ $item['name'] }}</option>
+                            @endforeach
                     </select>
                     <p class="txt-red">{{ $errors->first('category') }}</p>
                 </div>

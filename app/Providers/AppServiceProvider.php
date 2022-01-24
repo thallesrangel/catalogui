@@ -18,6 +18,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind('App\Repositories\Contracts\SearchAnnouncementRepositoryInterface', 'App\Repositories\SearchAnnouncementRepositoryEloquent');
         $this->app->bind('App\Repositories\Contracts\AnnouncementManagementPostRepositoryInterface', 'App\Repositories\AnnouncementManagementPostRepositoryEloquent');
         $this->app->bind('App\Repositories\Contracts\AnnouncementManagementCouponRepositoryInterface', 'App\Repositories\AnnouncementManagementCouponRepositoryEloquent');
+        $this->app->bind('App\Repositories\Contracts\CategoryRepositoryInterface', 'App\Repositories\CategoryRepositoryEloquent');
     }
 
     /**
