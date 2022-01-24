@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 banner-initial">
-                <h1>Divulgar Negócios, Estabelecimentos e Serviços</h1>
+                <h1>Encontrar e Divulgar Negócios, Eventos e Serviços</h1>
                 <p>Descontos que todo mundo curte e acessa de qualquer lugar.</p>
                 <p>Acesse o perfil e fique por dentro de tudo.</p>
                 <a href="{{ route('announcement.create') }}" class="btn btn-outline-primary">Anuncie agora</a>

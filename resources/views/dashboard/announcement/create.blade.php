@@ -4,7 +4,7 @@
     @include('dashboard.includes.navbar')
 
     <div class="container">
-        <h4 class="space-3">Anunciar Negócios, Estabelecimentos e Serviços</h4>   
+        <h4 class="space-3">Anunciar Negócios, Eventos e Serviços</h4>   
 
         <form method="POST" action="{{ route('announcement.store') }}" enctype="multipart/form-data" class="form-announcement">
             @csrf
@@ -28,18 +28,16 @@
 
             <div class="row">      
                 <div class="col-md-3">
-                    <select class="form-control" id="input-category" name="category_id" required>
-                        <option value="">Selecione uma opção</option>
-                            @foreach($category as $item)
-                                <option value="{{ $item['id'] }}">{{ $item['name'] }}</option>
-                            @endforeach
+                    <select class="form-control js-select" id="input-category" name="category_id" required>
+                        @foreach($category as $item)
+                            <option value="{{ $item['id'] }}">{{ $item['name'] }}</option>
+                        @endforeach
                     </select>
                     <p class="txt-red">{{ $errors->first('category') }}</p>
                 </div>
 
                 <div class="col-md-3">
-                    <select class="form-select" id="input-subcategory" name="subcategory_id" required>
-                        <option value="">Selecione uma opção</option>
+                    <select class="form-select js-select" id="input-subcategory" name="subcategory_id" required>
                         <option value="1">Saúde</option>
                         <option value="2">Esportes</option>
                         <option value="3">Serviços</option>

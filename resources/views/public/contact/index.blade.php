@@ -8,7 +8,7 @@
             <div class="col-md-6">
                 <h1 class="space-3">Indique<br>
                     <b>Parceiros</b> <span class="txt-purple">Catalogui</span></h1>
-                <p class="space-3">Uma plataforma para dispinibilizar informaçoes sobre os melhores negócios, serviços e eventos da sua cidade.</p>
+                <p class="space-3">Uma plataforma para dispinibilizar informaçoes sobre os melhores negócios, eventos e serviços da sua cidade.</p>
                 <ul class="list-group list-infos">
                     <li class="list-group-item"><i class="bi bi-geo-alt"></i> R. Praia das Dunas, 09 - Barra do Sahy, Aracruz - ES, 29198-153</li>
                     <li class="list-group-item"><i class="bi bi-phone"></i> (27) 99827-5832</li>

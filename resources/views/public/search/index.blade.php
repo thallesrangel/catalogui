@@ -5,7 +5,7 @@
     <div class="div-filter">
         <div class="row h-100 align-items-center justify-content-center">
             <div class="col-sm-12 col-md-6">
-                <h1>Encontre Negócios, Serviços e Eventos</h1>
+                <h1>Encontre Negócios, Eventos e Serviços</h1>
                 <h4>Conheça detalhes e obtenha descontos</h4>
             </div>
             <div class="col-sm-12 col-md-4">
