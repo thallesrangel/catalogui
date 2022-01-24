@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="col-md-3">
-                    <select class="form-select" id="subcategory" name="subcategory_id" required>
+                    <select class="form-select" id="input-subcategory" name="subcategory_id" required>
                         <option value="">Selecione uma opção</option>
                         <option value="1">Saúde</option>
                         <option value="2">Esportes</option>
