@@ -51,15 +51,21 @@
                             <button class="btn btn-sm btn-default txt-red" type="submit"><i class="bi bi-trash2"></i> Inativar</button>
                         </form>
                     </li>
-
-                    <a class=" btn btn-default txt-green" href="#"><i class="bi bi-box-arrow-up-right"></i> Acessar Como</a>
                 </ul>
             </div>
 
             <div class="col-sm-12 col-md-3">
-                <p>ID:{{ $item->id }}</p>
-                <p>Contato: {{ $item->user->email }}</p>
-                <p class="{{strlen($item->user->document) <= 11 ? 'cpf' : 'cnpj'  }}">{{ $item->user->document }}</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a class=" btn btn-default txt-green" href="#"><i class="bi bi-box-arrow-up-right"></i> Acessar Como - ID {{ $item->id }}</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <span>Email: {{ $item->user->email }}</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <span class="{{strlen($item->user->document) <= 11 ? 'cpf' : 'cnpj'  }}">{{ $item->user->document }}</span>
+                    </li>
+                </ul>
             </div>
         </div>
         @empty
