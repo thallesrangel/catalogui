@@ -29,6 +29,7 @@
             <div class="row">      
                 <div class="col-md-3">
                     <select class="form-control js-select" id="input-category" name="category_id" required>
+                        <option value="0">Selecione uma opção</option>
                         @foreach($category as $item)
                             <option value="{{ $item['id'] }}">{{ $item['name'] }}</option>
                         @endforeach
@@ -38,9 +39,6 @@
 
                 <div class="col-md-3">
                     <select class="form-select js-select" id="input-subcategory" name="subcategory_id" required>
-                        <option value="1">Saúde</option>
-                        <option value="2">Esportes</option>
-                        <option value="3">Serviços</option>
                     </select>
                     <p class="txt-red">{{ $errors->first('subcategory') }}</p>
                 </div>
@@ -211,4 +209,6 @@
                 }
             }
         </script>
+
+        <script src="{{ asset('/js/selectSubCategory.js') }}"></script>
 @endsection

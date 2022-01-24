@@ -14,8 +14,10 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AnnouncementManagementController;
 use App\Http\Controllers\CityController;
+use App\Http\Controllers\SubCategoryController;
 
 Route::get('/', [ HomeController::class, 'index' ])->name('home');
+Route::get('/subcategory/{id}', [ SubCategoryController::class, 'getById']);
 
 Route::prefix('anuncio')->group(function () {
     Route::get('/{slug}', [ AnnouncementController::class, 'show' ])->name('announcemen.datails');
