@@ -28,9 +28,8 @@
 
             <div class="row">      
                 <div class="col-md-3">
-                    <label for="input-category" class="form-label">Estado *</label>
                     <select class="form-control" id="input-category" name="category_id" required>
-                        <option value="">Selecione uma categoria</option>
+                        <option value="">Selecione uma opção</option>
                             @foreach($category as $item)
                                 <option value="{{ $item['id'] }}">{{ $item['name'] }}</option>
                             @endforeach
@@ -39,9 +38,8 @@
                 </div>
 
                 <div class="col-md-3">
-                    <label for="subcategory" class="form-label">Subcategoria *</label>
                     <select class="form-select" id="subcategory" name="subcategory_id" required>
-                        <option value="">Escolha uma opção</option>
+                        <option value="">Selecione uma opção</option>
                         <option value="1">Saúde</option>
                         <option value="2">Esportes</option>
                         <option value="3">Serviços</option>
