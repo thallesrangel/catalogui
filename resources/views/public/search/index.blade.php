@@ -8,9 +8,6 @@
                 <h1>Encontre Negócios, Eventos e Serviços</h1>
                 <h4>Conheça detalhes e obtenha descontos</h4>
             </div>
-            <div class="col-sm-12 col-md-4">
-                <img class="img-fluid" src="{{ asset('img/bg-search.svg')}}">
-            </div>
         </div>
     </div>
     <div class="container-fluid">
@@ -69,6 +66,7 @@
                                     <img class="card-default__avatar lazy" alt="" width="40px" src="{{ asset('img/thumbnails') .'/'. $item->img_profile }}" style="">
                                 </div>
                                 <h4 class="card-default__title">{{ $item->title }}</h4>
+                                <h6 class="txt-green">{{ $item->category->name }} <i class="bi bi-caret-right"></i> {{ $item->subcategory->name }}</h6>
                                 <span class="card-default__name">{{ $item->state_id}} - {{ $item->city_id }}</span>
                                 <div class="card-product__footer">
                                     <span class="card-product__label">1 Benefício</span>

@@ -5,7 +5,6 @@
     
     <div class="container">
         <h4 class="space-3">Dashboard | Admin</h4>
-        
         <h5>Filtros</h5>
         <form method="get" action="{{ route('dashboard') }}" class="div-filter-admin">
             <div class="row">

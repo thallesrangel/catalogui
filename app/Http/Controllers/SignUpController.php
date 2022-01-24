@@ -22,11 +22,13 @@ class SignUpController extends Controller
     public function store(UserRequest $request)
     {
         try {
-            $this->userService->store($request);
+            $user = $this->userService->store($request);
+
+            session()->put('user', $user); //?
         } catch (\Exception $e) {
             return redirect()->route('user.create')->with('error', 'Ocorreu um erro. Verifique os campos.');
         }
         
-        return redirect()->route('login')->with('success', 'Registrado com sucesso.');
+        return redirect()->route('dashboard')->with('success', 'Registrado com sucesso.');
     }
 }
