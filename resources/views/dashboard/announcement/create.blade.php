@@ -140,7 +140,7 @@
                 <div class="col-md-3">
                     <label for="input-states" class="form-label">Estado *</label>
                     <select class="form-control" id="input-states" name="state_id" required>
-                        <option value="">Selecione um Estado</option>
+                        <option value="">Estados</option>
                             @foreach($states as $item)
                                 <option value="{{ $item['sigla'] }}">{{ $item['nome'] }}</option>
                             @endforeach
@@ -151,7 +151,7 @@
                 <div class="col-md-3">
                     <label for="city_id" class="form-label">Cidade *</label>
                     <select id="city" class="form-control" id="input-city" name="city_id" required>
-                        <option value="">Selecione uma Cidade</option>
+                        <option value="">Cidades</option>
                     </select>
                     <p class="txt-red">{{ $errors->first('city_id') }}</p>
                 </div>

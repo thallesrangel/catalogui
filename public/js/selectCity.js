@@ -28,7 +28,7 @@ $(function () {
 			data: {},
 			dataType: 'json',
 			success: function (res) {
-				$('#city').html('<option value="">Selecione uma cidade	</option>');
+				$('#city').html('<option value="">Cidades</option>');
 				$.each(res, function (key, value) {
 					$("#city").append('<option value="' + value.id + '">' + value.nome + '</option>');
 				});

@@ -2,14 +2,14 @@
 
 @section('content')
     @include('public.includes.navbar')
-    <div class="div-filter">
-        <div class="row h-100 align-items-center justify-content-center">
-            <div class="col-sm-12 col-md-6">
+    
+        <div class="row align-items-center justify-content-center mt-5">
+            <div class="col-sm-12 col-md-8 div-search">
                 <h1>Encontre Negócios, Eventos e Serviços</h1>
                 <h4>Conheça detalhes e obtenha descontos</h4>
             </div>
         </div>
-    </div>
+    
     <div class="container-fluid">
         <div class="row div-input-filter d-flex justify-content-center">
             <div class="col-md-2 col-sm-12">
@@ -37,7 +37,7 @@
 
             <div class="col-md-3 col-sm-12">
                 <select id="city" class="form-control" id="input-city" name="city_id" required>
-                    <option value="">Selecione uma Cidade</option>
+                    <option value="">Cidades</option>
                 </select>
                 <p class="txt-red">{{ $errors->first('city_id') }}</p>
             </div>
