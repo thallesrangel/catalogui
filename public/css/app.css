@@ -13212,6 +13212,14 @@ a
     color: #1dd1a1 !important;
 }
 
+.social-menu-event li a
+{
+    margin-top: 10px;
+    font-size: 26px;
+    color: #3498db !important;
+}
+
+
 .menu-navbar
 {
     border-bottom:1px solid #dbdbdb;
@@ -13285,6 +13293,19 @@ a
     width: 160px;
     padding: 3px;
 }
+
+.img-announcement-event
+{
+    border-radius: 12px;
+    -o-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    margin: 1rem;
+    height: 320px;
+    width: 514px;
+    padding: 3px;
+}
+
 
 .banner-announcement img
 {

@@ -44,7 +44,11 @@ class AnnouncementController extends Controller
             return redirect(route('search'));
         }
 
-        return view('public.announcement.index', ['data' => $announcement, 'posts' => $posts, 'coupons' => $coupons ]);
+        if ($announcement->category_id == 12) {
+            return view('public.announcement.event', ['data' => $announcement, 'posts' => $posts, 'coupons' => $coupons ]);
+        } else {
+            return view('public.announcement.index', ['data' => $announcement, 'posts' => $posts, 'coupons' => $coupons ]);
+        }
     }
 
     public function create()

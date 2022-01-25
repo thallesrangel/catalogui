@@ -25,7 +25,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="mb-2">
-                                <label for="imgInpPost" class="form-label">Perfil do Anúncio *</label>
+                                <label for="imgInpPost" class="form-label">Imagem *</label>
                                 <br>
                                 <button class="btn btn-light btn-file">
                                     Escolher Imagem <input accept="image/*" id="imgInpPost" type="file" name="img_post" required>
@@ -36,11 +36,11 @@
                             </div>
                     
                             <div class="mb-2">
-                                <label for="recipient-name" class="col-form-label">Título</label>
+                                <label for="recipient-name" class="form-label">Título</label>
                                 <input type="text" class="form-control" id="recipient-name" placeholder="Ex: Cervejas" name="title">
                             </div>
                             <div class="mb-2">
-                                <label for="recipient-name" class="col-form-label">Valor:</label>
+                                <label for="recipient-name" class="form-label">Valor:</label>
                                 <input type="text" class="form-control" id="recipient-name" placeholder="Ex: A partir de R$ 10,00" name="value">
                             </div>
 
@@ -95,17 +95,17 @@
                         </div>
                         <div class="modal-body">
                             <div class="mb-2">
-                                <label for="coupon-name" class="col-form-label">Nome *</label>
+                                <label for="coupon-name" class="form-label">Nome *</label>
                                 <input type="text" class="form-control" id="coupon-name" placeholder="Ex: 30% OFF" name="name" required>
                                 <p class="txt-red">{{ $errors->first('name') }}</p>
                             </div>
                             <div class="mb-2">
-                                <label for="coupon-code" class="col-form-label">Código</label>
+                                <label for="coupon-code" class="form-label">Código</label>
                                 <input type="text" class="form-control" id="coupon-code" placeholder="Ex: NEW2022" name="code">
                             </div>
 
                             <div class="mb-2">
-                                <label for="coupon-description" class="col-form-label">Descrição</label>
+                                <label for="coupon-description" class="form-label">Descrição</label>
                                 <textarea class="form-control" id="coupon-description" name="description"></textarea>
                             </div>
 

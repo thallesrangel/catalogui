@@ -14,7 +14,7 @@ class AnnouncementRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|max:30|string',
+            'title' => 'required|max:50|string',
             'description' => 'required|string',
             'category_id' => 'required|numeric',
             'subcategory_id' => 'required|numeric',
@@ -42,11 +42,12 @@ class AnnouncementRequest extends FormRequest
     public function messages()
     {
         return [
-            'required' => 'Campo obrigatório',
-            'numeric' => 'Campo deve ser números',
-            'string' => 'Campo deve ser texto',
+            'required' => 'Campo obrigatório.',
+            'numeric' => 'Campo deve ser números.',
+            'string' => 'Campo deve ser texto.',
             'dimensions' => 'Dimensões inválidas. Escolha outra imagem.',
-            'mimes' => 'Não suporta o tipo de arquivo. Permitidos: jpg, png, jpeg.'
+            'mimes' => 'Não suporta o tipo de arquivo. Permitidos: jpg, png, jpeg.',
+            'max.title' => 'Deve ser um título menor.'
         ];
     }
 }
