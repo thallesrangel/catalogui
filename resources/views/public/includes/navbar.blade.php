@@ -8,7 +8,7 @@
             <a class="nav-link active" href="{{ route('contact') }}">Indicar  Parceiros</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="{{ route('search') }}">Filtros</a>
+            <a class="nav-link active" href="{{ route('search') }}">Encontre</a>
         </li>
         <li class="nav-item">
             <a class="nav-link btn btn-outline-secondary" href="{{ route('login') }}">Acessar sua Conta</a>

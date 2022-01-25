@@ -10,8 +10,8 @@
             </div>
         </div>
     
-    <div class="container-fluid">
-        <div class="row div-input-filter d-flex justify-content-center">
+    <div class="container div-input-filter">
+        <div class="row d-flex justify-content-center">
             <div class="col-md-2 col-sm-12">
                 <select class="form-select" name="category">
                     <option value="1">Idioma</option>
@@ -35,7 +35,7 @@
                 </select>
             </div>
 
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-2 col-sm-12">
                 <select id="city" class="form-control" id="input-city" name="city_id" required>
                     <option value="">Cidades</option>
                 </select>
@@ -47,7 +47,7 @@
             </div>
 
             <div class="col-md-1 col-sm-12">
-                <button type="submit" class="btn btn-outline-primary">Buscar</button>
+                <button type="submit" class="btn btn-primary">Buscar</button>
             </div>
         </div>
     </div>
