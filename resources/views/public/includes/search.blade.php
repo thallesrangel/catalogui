@@ -1,4 +1,4 @@
-<form method="post" action="#" class="search-main">
+<form method="get" action="{{ route('search') }}" class="search-main">
     <h3 class="text-center">Onde você está?</h3>
     <div class="row d-flex justify-content-center">
         <div class="col-md-2 col-sm-6">
@@ -21,7 +21,7 @@
    
     <div class="row d-flex justify-content-center">
         <div class="col-sm-12 col-md-6">
-            <input class="form-control me-2" type="search" placeholder="Qual experiência você busca hoje?">
+            <input class="form-control me-2" type="search" name="title" placeholder="Qual experiência você busca hoje?">
         </div>
     </div>
 

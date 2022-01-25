@@ -60,7 +60,7 @@
     <div class="container">
         <div class="row space-3">
             
-            @foreach($data as $item)
+            @forelse($data as $item)
                 <div class="col-md-3 col-sm-12 mt-5">
                     <div class="list-main__item">
                         <a href="{{ route('announcemen.datails', $item->slug) }}" class="card-default">
@@ -80,7 +80,9 @@
                         </a>
                     </div>
                 </div>
-        @endforeach
+            @empty
+                <h5>Não há publicações para este filtro.</h5>
+            @endforelse
         </div>
     </div>
     
