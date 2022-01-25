@@ -14,8 +14,8 @@ class SearchAnnouncementService
         $this->searchAnnouncementRepository = $searchAnnouncementRepository;
     }
 
-    public function search()
+    public function search($request)
     {
-        return $this->searchAnnouncementRepository->search();
+        return $this->searchAnnouncementRepository->search($request);
     }
 }

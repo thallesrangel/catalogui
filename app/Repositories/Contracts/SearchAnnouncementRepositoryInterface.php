@@ -2,9 +2,9 @@
 
 namespace App\Repositories\Contracts;
 
-//use App\Http\Requests\SearchAnnouncementRequest;
+use App\Http\Requests\SearchAnnouncementRequest;
 
 interface SearchAnnouncementRepositoryInterface
 {
-    public function search();
+    public function search($request);
 }

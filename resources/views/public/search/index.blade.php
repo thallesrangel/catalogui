@@ -11,45 +11,50 @@
         </div>
     
     <div class="container div-input-filter">
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-2 col-sm-12">
-                <select class="form-select" name="category">
-                    <option value="1">Idioma</option>
-                    <option value="1">São Paulo</option>
-                </select>
-            </div>
+        <form method="get" action="{{ route('search') }}">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-2 col-sm-12">
+                    <select class="form-control" id="input-category" name="category_id">
+                        <option value="">Categoria</option>
+                        @foreach($category as $item)
+                            <option value="{{ $item['id'] }}">{{ $item['name'] }}</option>
+                        @endforeach
+                    </select>
+                    <p class="txt-red">{{ $errors->first('category') }}</p>
+                </div>
 
-            <div class="col-md-2 col-sm-12">
-                <select class="form-select" name="category">
-                    <option value="1">Idioma</option>
-                    <option value="1">São Paulo</option>
-                </select>
-            </div>
+                <div class="col-md-2 col-sm-12">
+                    <select class="form-select" id="input-subcategory" name="subcategory_id">
+                        <option value="">Subcategoria</option>
+                    </select>
+                    <p class="txt-red">{{ $errors->first('subcategory') }}</p>
+                </div>
 
-            <div class="col-md-1 col-sm-12">
-                <select class="form-control" id="input-states" name="state_id">
-                    <option value="">UF</option>
-                    @foreach($states as $item)
-                        <option value="{{ $item['sigla'] }}">{{ $item['sigla'] }}</option>
-                    @endforeach
-                </select>
-            </div>
+                <div class="col-md-1 col-sm-12">
+                    <select class="form-control" id="input-states" name="state_id">
+                        <option value="">UF</option>
+                        @foreach($states as $item)
+                            <option value="{{ $item['sigla'] }}">{{ $item['sigla'] }}</option>
+                        @endforeach
+                    </select>
+                </div>
 
-            <div class="col-md-2 col-sm-12">
-                <select id="city" class="form-control" id="input-city" name="city_id" required>
-                    <option value="">Cidades</option>
-                </select>
-                <p class="txt-red">{{ $errors->first('city_id') }}</p>
-            </div>
+                <div class="col-md-2 col-sm-12">
+                    <select id="city" class="form-control" id="input-city" name="city_id">
+                        <option value="">Cidades</option>
+                    </select>
+                    <p class="txt-red">{{ $errors->first('city_id') }}</p>
+                </div>
 
-            <div class="col-md-3 col-sm-12">
-                <input class="form-control" type="search" placeholder="Busque o que desejar...">
-            </div>
+                <div class="col-md-3 col-sm-12">
+                    <input class="form-control" type="search" name="title" placeholder="Busque o que desejar...">
+                </div>
 
-            <div class="col-md-1 col-sm-12">
-                <button type="submit" class="btn btn-primary">Buscar</button>
+                <div class="col-md-1 col-sm-12">
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 
     <div class="container">
@@ -79,4 +84,5 @@
         </div>
     </div>
     
+    <script src="{{ asset('/js/selectSubCategory.js') }}"></script>
 @endsection
