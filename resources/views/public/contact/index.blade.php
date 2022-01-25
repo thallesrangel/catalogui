@@ -7,7 +7,7 @@
         <div class="row div-contact">
             <div class="col-md-6">
                 <h1 class="space-3">Indique<br>
-                    <b>Parceiros</b> <span class="txt-purple">Catalogui</span></h1>
+                    <b>Parceiros <span class="txt-green">Catalogui</span></b></h1>
                 <p class="space-3">Uma plataforma para dispinibilizar informaçoes sobre os melhores negócios, eventos e serviços da sua cidade.</p>
                 <ul class="list-group list-infos">
                     <li class="list-group-item"><i class="bi bi-geo-alt"></i> R. Inácio da Penha Amaral, 140 - Fundão-ES, 29185-000</li>
@@ -16,7 +16,7 @@
                 </ul>
             </div>
 
-            <div class="col-sm-12 col-md-5">
+            <div class="col-sm-12 col-md-6">
                 <form method="POST" class="contact-form space-3">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
@@ -78,9 +78,5 @@
             </div>
         </div>
 
-    </div>
-
-    <div class="container w-50">
-        <h3 class="text-center">FAQ - Perguntas Frequentes</h3>
     </div>
 @endsection
