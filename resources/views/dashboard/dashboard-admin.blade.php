@@ -57,7 +57,7 @@
             <div class="col-sm-12 col-md-3">
                 <ul class="list-inline">
                     <li class="list-inline-item">
-                        <a class=" btn btn-default txt-green" href="#"><i class="bi bi-box-arrow-up-right"></i> Acessar Como - ID {{ $item->id }}</a>
+                        <a class=" btn btn-default txt-green disabled" href="#"><i class="bi bi-box-arrow-up-right"></i> Acessar Como - ID {{ $item->id }}</a>
                     </li>
                     <li class="list-inline-item">
                         <span>Email: {{ $item->user->email }}</span>
