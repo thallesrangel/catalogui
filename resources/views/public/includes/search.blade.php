@@ -26,8 +26,8 @@
     </div>
 
     <div class="row d-flex justify-content-center">
-        <div class="col-md-2 mt-2 text-center">
-            <button class="btn btn-primary input-block-level">Pesquisa Catalogui</button>
+        <div class="col-md-3 mt-2 text-center">
+            <button class="btn btn-lg btn-primary">Pesquisa Catalogui</button>
         </div>
     </div>
 </form>

@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="col-md-1 col-sm-12">
-                    <button type="submit" class="btn btn-primary">Buscar</button>
+                    <button type="submit" class="btn btn-lg btn-primary">Buscar</button>
                 </div>
             </div>
         </form>
