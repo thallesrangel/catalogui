@@ -10,13 +10,13 @@
                     <b>Parceiros</b> <span class="txt-purple">Catalogui</span></h1>
                 <p class="space-3">Uma plataforma para dispinibilizar informaçoes sobre os melhores negócios, eventos e serviços da sua cidade.</p>
                 <ul class="list-group list-infos">
-                    <li class="list-group-item"><i class="bi bi-geo-alt"></i> R. Praia das Dunas, 09 - Barra do Sahy, Aracruz - ES, 29198-153</li>
-                    <li class="list-group-item"><i class="bi bi-phone"></i> (27) 99827-5832</li>
+                    <li class="list-group-item"><i class="bi bi-geo-alt"></i> R. Inácio da Penha Amaral, 140 - Fundão-ES, 29185-000</li>
+                    <li class="list-group-item"><i class="bi bi-phone"></i> (27) 996882296</li>
                     <li class="list-group-item"><i class="bi bi-envelope"></i> contato@catalogui.com</li>
                 </ul>
             </div>
 
-            <div class="col-md-5">
+            <div class="col-sm-12 col-md-5">
                 <form method="POST" class="contact-form space-3">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">

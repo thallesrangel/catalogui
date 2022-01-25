@@ -10,8 +10,8 @@
             <a onclick="outDiv()" href="#"><i class="bi bi-x-circle-fill"></i> Fechar</a>
             <div class="navbar">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Indicar Parceiros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('search') }}">Pesquisar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('search') }}">Parceiros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Recomendar Parceiros</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Acessar sua Conta</a></li>
                 </ul>
             </div>
@@ -37,10 +37,10 @@
 
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link active" href="{{ route('contact') }}">Indicar Parceiros</a>
+                <a class="nav-link active" href="{{ route('search') }}">Parceiros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="{{ route('search') }}">Pesquisar</a>
+                <a class="nav-link active" href="{{ route('contact') }}">Recomendar Parceiros</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link btn btn-outline-secondary" href="{{ route('login') }}">Acessar sua Conta</a>

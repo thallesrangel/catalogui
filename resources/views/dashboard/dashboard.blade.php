@@ -85,19 +85,19 @@
                         <div class="col-sm-12 col-md-2">
                             <h5>Destaque Básico</h5>
                             <h4>R$ 19,99</h4>
-                            <a class="btn btn-outline-primary" href="#">Decolar!</a>
+                            <a class="btn btn-outline-primary disabled" href="#">Decolar!</a>
                         </div>
 
                         <div class="col-sm-12 col-md-2">
                             <h5>Destaque Premium</h5>
                             <h4>R$ 29,99</h4>
-                            <a class="btn btn-outline-primary" href="#">Decolar!</a>
+                            <a class="btn btn-outline-primary disabled" href="#">Decolar!</a>
                         </div>
 
                         <div class="col-sm-12 col-md-2">
                             <h5>Destaque PRO</h5>
                             <h4>R$ 39,99</h4>
-                            <a class="btn btn-outline-primary" href="#">Decolar!</a>
+                            <a class="btn btn-outline-primary disabled" href="#">Decolar!</a>
                         </div>
                     </div>
                 @empty

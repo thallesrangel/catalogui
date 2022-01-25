@@ -31,7 +31,6 @@
                                                         
                             <img class="card-default__image_event lazy" src="https://images.sympla.com.br/60881b80a83b9-xs.png" alt="">
                             <div class="card-default__content_event">
-                                <span class="card-default__name_event">10 outubro</span>	
                                 <h4 class="card-default__title">Conferencia Save The Date</h4>				
                             </div>
                         </a>
