@@ -166,10 +166,10 @@
                         </div>
                     
                     </div>
-                    </div>
+                </div>
 
                 <div class="mb-3 mt-3">
-                    <textarea class="form-control" rows="5" cols="5" placeholder="Conte sobre sua experiência e dê sugestões"></textarea>
+                    <textarea class="form-control" rows="3" cols="3" placeholder="Conte sobre sua experiência e dê sugestões"></textarea>
                 </div>
                 <button class="btn btn-primary" type="submit">Enviar</button>
             </div>

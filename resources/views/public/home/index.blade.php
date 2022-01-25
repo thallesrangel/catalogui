@@ -19,8 +19,6 @@
 
         @include('public.includes.search')
 
-        <h3 class="space-3">Atalhos de Pesquisa</h3>
-
         @include('public.includes.search_shortcut')
 
         <h3 class="text-center space-3">Confira os Próximos Eventos</h3>

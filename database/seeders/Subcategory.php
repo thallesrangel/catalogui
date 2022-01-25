@@ -106,7 +106,7 @@ class Subcategory extends Seeder
 
             [ 'category_id' => 11, 'name' => 'Roupas e Calçados'],
             [ 'category_id' => 11, 'name' => 'Relojoaria'],
-            [ 'category_id' => 11, 'name' => 'Roupas e Calçados'],
+            [ 'category_id' => 11, 'name' => 'Ótica'],
 
             [ 'category_id' => 12, 'name' => 'Religiosos'],
             [ 'category_id' => 12, 'name' => ''],

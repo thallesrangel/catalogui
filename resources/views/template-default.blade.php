@@ -15,5 +15,14 @@
         @yield('content')
     </div>
     <script src="{{ asset('/js/selectCity.js') }}"></script>
+    <script>
+        function showDiv() {
+            document.getElementById('welcomeDiv').style.display = "block";
+        }
+        
+        function outDiv() {
+            document.getElementById('welcomeDiv').style.display = "none";
+        }
+    </script>
 </body>
 </html>

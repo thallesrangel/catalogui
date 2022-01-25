@@ -1,66 +1,57 @@
-<div class="row dev-cards-menu">
+<div class="row">
+    <h3 class="space-3">Atalhos de Pesquisa</h3>
+    <div class="col-12">
+        <div class="list-scroll">
 
-    <div class="col-sm-6 col-md-3 cards-menu">
-        <div class="card bg-red">
-            <div class="card-body">
-                <i class="bi bi-controller"></i>
-                <h5 class="card-title">Alimentação</h5>
+            <div class="list-scroll__item">
+                <a href="#" class="card-icon bg-red">
+                    <i class="bi bi-controller"></i>
+                    <span class="card-icon__text">Alimentação</span>
+                </a>
             </div>
-          </div>
-    </div>
 
-    <div class="col-sm-6 col-md-3 cards-menu">
-        <div class="card bg-orange">
-            <div class="card-body">
-                <i class="bi bi-bandaid"></i>
-                <h5 class="card-title">Saúde</h5>
+            <div class="list-scroll__item">
+                <a href="#" class="card-icon bg-orange">
+                    <i class="bi bi-bandaid"></i>
+                    <span class="card-icon__text">Saúde</span>
+                </a>
             </div>
-          </div>
-    </div>
 
-    <div class="col-sm-6 col-md-3 cards-menu">
-        <div class="card bg-yellow">
-            <div class="card-body">
-                <i class="bi bi-bicycle"></i>
-                <h5 class="card-title">Lazer</h5>
+            <div class="list-scroll__item">
+                <a href="#" class="card-icon bg-yellow">
+                    <i class="bi bi-bicycle"></i>
+                    <span class="card-icon__text">Lazer</span>
+                </a>
             </div>
-          </div>
-    </div>
 
-    <div class="col-sm-6 col-md-3 cards-menu">
-        <div class="card bg-blue">
-            <div class="card-body">
-                <i class="bi bi-briefcase"></i>
-                <h5 class="card-title">Educação</h5>
+            <div class="list-scroll__item">
+                <a href="#" class="card-icon bg-green">
+                    <i class="bi bi-briefcase"></i>
+                    <span class="card-icon__text">Educação</span>
+                </a>
             </div>
-          </div>
-    </div>
 
-    <div class="col-sm-6 col-md-3 cards-menu">
-        <div class="card bg-pink">
-            <div class="card-body">
-                <i class="bi bi-building"></i>
-                <h5 class="card-title">Imóveis</h5>
+            <div class="list-scroll__item">
+                <a href="#" class="card-icon bg-blue">
+                    <i class="bi bi-building"></i>
+                    <span class="card-icon__text">Imóveis</span>
+                </a>
             </div>
-          </div>
-    </div>
 
-    <div class="col-sm-6 col-md-3 cards-menu">
-        <div class="card bg-purple">
-            <div class="card-body">
-                <i class="bi bi-truck"></i>
-                <h5 class="card-title">Autos</h5>
+            <div class="list-scroll__item">
+                <a href="#" class="card-icon bg-pink">
+                    <i class="bi bi-truck"></i>
+                    <span class="card-icon__text">Autos</span>
+                </a>
             </div>
-          </div>
-    </div>
 
-
-    <div class="col-sm-6 col-md-3 cards-menu">
-        <a class="card bg-green" href="">
-            <div class="card-body">
-                <i class="bi bi-border-all"></i>
-                <h5 class="card-title">Ver todos</h5>
+            <div class="list-scroll__item">
+                <a href="#" class="card-icon bg-purple">
+                    <i class="bi bi-border-all"></i>
+                    <span class="card-icon__text">Ver Todos</span>
+                </a>
             </div>
-        </a>
+
+        </div>
     </div>
 </div>

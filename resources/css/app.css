@@ -14,5 +14,6 @@
 @import 'create-annoucement.scss';
 @import 'dashboard.scss';
 @import 'contact.scss';
+@import './bg.scss';
 @import 'filter-admin.scss';
 @import './select2.min.css';

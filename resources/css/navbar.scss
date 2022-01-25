@@ -1,4 +1,4 @@
-.nav .nav-item a
+/*.nav .nav-item a
 {
     margin-left: 32px;
     font-size: 16px;
@@ -7,9 +7,78 @@
     font-weight: 600;
 }
 
-.navbar
+*/
+.btn-open-menu {
+    display: none;
+}
+  
+.menu-div
 {
+    background-color: #FFF;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+.menu a
+{
+    color: #ee5253;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #ff6b6b;
+}
+
+.menu
+{
+    padding: 50px;
+}
+
+.menu ul li a
+{
+    color: #3d3d3d;
+    font-size: 28px;
+}
+
+.menu ul li a:hover {
+    color: #341f97;
+}
+
+.social-menu li a
+{
+    margin-top: 10px;
+    font-size: 32px;
+    color: #1dd1a1 !important;
+}
+
+.menu-navbar
+{
+    border-bottom:1px solid #dbdbdb;
     padding: 10px 25px;
     background-color: #FFF;
-    border-bottom:1px solid #dbdbdb;
 }
+
+.menu-navbar ul li
+{
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+.btn-open-menu a i
+{
+    font-size: 32px;
+    color: #3d3d3d;
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-open-menu {
+      display: block;
+    }
+
+    .menu-navbar .nav
+    {
+        display: none;
+    }
+  }
