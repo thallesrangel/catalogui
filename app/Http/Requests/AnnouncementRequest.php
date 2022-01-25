@@ -18,8 +18,8 @@ class AnnouncementRequest extends FormRequest
             'description' => 'required|string',
             'category_id' => 'required|numeric',
             'subcategory_id' => 'required|numeric',
-            'img_profile' => 'required|image|mimes:jpg,png,jpeg,svg|max:2048|dimensions:min_width=100,min_height=100,max_width=2000,max_height=2000',
-            'img_card' => 'required|image|mimes:jpg,png,jpeg,svg|max:2048|dimensions:min_width=100,min_height=100,max_width=2000,max_height=2000',
+            'img_profile' => 'required|image|mimes:jpg,png,jpeg|max:2048|dimensions:min_width=100,min_height=100,max_width=2000,max_height=2000',
+            'img_card' => 'required|image|mimes:jpg,png,jpeg|max:2048|dimensions:min_width=100,min_height=100,max_width=2000,max_height=2000',
             'information' => 'string|nullable',
             'title_main_link' => 'nullable',
             'main_link' => 'nullable',
@@ -45,6 +45,8 @@ class AnnouncementRequest extends FormRequest
             'required' => 'Campo obrigatório',
             'numeric' => 'Campo deve ser números',
             'string' => 'Campo deve ser texto',
+            'dimensions' => 'Dimensões inválidas. Escolha outra imagem.',
+            'mimes' => 'Não suporta o tipo de arquivo. Permitidos: jpg, png, jpeg.'
         ];
     }
 }
