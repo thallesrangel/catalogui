@@ -13245,6 +13245,12 @@ a
         display: none;
     }
   }
+
+.nav-dash-admin li a i 
+{
+    font-size: 1.4rem;
+    color: #3d3d3d;
+}
 .list-group-flush li:first-child { border-top: none; border-bottom: none; }
 .list-group-item { border: none; margin: 5px 0px; font-size: 18px; background: none;}
 
